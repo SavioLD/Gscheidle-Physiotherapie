@@ -297,6 +297,10 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
 .reveal.is-in{opacity:1;transform:none}
 
 /* ---------- responsive ---------- */
+/* Sieben Kacheln in drei Spalten lassen eine allein stehen – die wird mittig gesetzt. */
+@media (min-width:981px){
+  .benefit-grid > .benefit:last-child:nth-child(3n+1){grid-column:2}
+}
 @media (max-width:980px){
   .job{grid-template-columns:1fr;gap:26px}
   .benefit-grid,.steps{grid-template-columns:repeat(2,1fr)}
@@ -455,7 +459,7 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
             <li><b>Befund und Therapieplan</b> – eigenverantwortlich, am Menschen orientiert, nicht am Schema</li>
             <li>Behandlung in <b>Krankengymnastik, Manueller Therapie, Manueller Lymphdrainage</b> und so weiter</li>
             <li>Je nach Qualifikation auch <b>Kinderbobath, CMD, Stoßwelle, Elektrotherapie, Kinesiotaping</b> und so weiter</li>
-            <li><b>Hausbesuche und Pflegeheime</b> in Rottweil und Umgebung – nach Absprache, nicht als Dauerauftrag</li>
+            <li><b>Hausbesuche und Pflegeheime</b> in Rottweil und Umgebung – nach Absprache, nicht als Dauerauftrag. Ein <b>Geschäftswagen</b> dafür lässt sich einrichten</li>
             <li>Kurze fachliche Absprachen im Team statt langer Dienstwege</li>
           </ul>
         </div>
@@ -516,6 +520,11 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
         <p>KG, MT, MLD, Kinderbobath, CMD, Stoßwelle, Elektrotherapie, Kinesiotaping, Schröpfen, Dorn. Du bleibst fachlich in Bewegung.</p>
       </div>
       <div class="benefit reveal">
+        <div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.6-5.3A2 2 0 0 0 15.5 10h-7a2 2 0 0 0-1.9 1.7z"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/><path d="M3 13h1M20 13h1"/></svg></div>
+        <b>Geschäftswagen möglich</b>
+        <p>Für die Hausbesuche lässt sich ein Geschäftswagen einrichten – sprich uns im Gespräch einfach darauf an.</p>
+      </div>
+      <div class="benefit reveal">
         <div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <b>Team statt Einzelkämpfer</b>
         <p>5 Therapeut:innen zum Fachsimpeln und zwei Kolleginnen an der Rezeption, die dir Termine und Papierkram abnehmen.</p>
@@ -566,8 +575,8 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
     </div>
 
     <div class="setup-warn" id="setupWarn">
-      <b>Hinweis für die Praxis:</b> Es ist noch kein LeadTable-Webhook hinterlegt – Bewerbungen werden aktuell <b>nicht</b> übertragen.
-      Die URL in <code>index.html</code> unter <code>WEBHOOK_URL</code> eintragen.
+      <b>Hinweis für die Praxis:</b> Es ist noch kein Empfänger hinterlegt – Bewerbungen werden aktuell <b>nicht</b> übertragen.
+      In <code>index.html</code> den <code>WEB3FORMS_KEY</code> eintragen (E-Mail an die Praxis), optional zusätzlich <code>WEBHOOK_URL</code> für LeadTable.
     </div>
 
     <div class="form-card">
@@ -627,7 +636,7 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
           <div class="fstep" data-step="4">
             <span class="reqtag reqtag--opt"><i></i>Wünschenswert</span>
             <h3>Hausbesuche – wärst du dabei?</h3>
-            <p class="hint">Wir betreuen auch Pflegeheime in der Region – nach Absprache.</p>
+            <p class="hint">Pflegeheime in der Region gehören dazu – nach Absprache. Geschäftswagen möglich.</p>
             <div class="choice-grid" data-field="hausbesuche" data-type="single">
               <label class="choice"><input type="radio" name="hausbesuche" value="Führerschein vorhanden, Hausbesuche gerne" data-ok="1" /><span class="key">A</span><span>Ja, gerne – Führerschein Klasse B vorhanden</span></label>
               <label class="choice"><input type="radio" name="hausbesuche" value="Führerschein vorhanden, Hausbesuche nach Absprache" data-ok="1" /><span class="key">B</span><span>Nach Absprache – Führerschein vorhanden</span></label>
@@ -757,13 +766,20 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
   "use strict";
 
   /* =====================================================================
-     KONFIGURATION
+     KONFIGURATION – hier wird eingestellt, wohin die Bewerbungen gehen.
      ---------------------------------------------------------------------
-     WEBHOOK_URL: Generic Webhook der LeadTable-Kachel hier eintragen.
-     Solange das Feld leer ist, wird NICHTS uebertragen und oben im
+     WEB3FORMS_KEY  Access Key von web3forms.com. Damit geht jede Bewerbung
+                    als formatierte E-Mail direkt an die Praxis. Die
+                    Empfaengeradresse wird bei web3forms hinterlegt, nicht
+                    hier - sie steht damit auch nicht im Quelltext.
+     WEBHOOK_URL    Optional zusaetzlich: Generic Webhook einer LeadTable-
+                    Kachel. Beide Wege duerfen gleichzeitig aktiv sein.
+
+     Ist keiner von beiden gesetzt, wird NICHTS uebertragen und ueber dem
      Formular erscheint ein Hinweis.
      ===================================================================== */
-  var WEBHOOK_URL = "";   /* <<< LeadTable Generic Webhook hier einsetzen */
+  var WEB3FORMS_KEY = "";   /* <<< Access Key von web3forms.com hier einsetzen */
+  var WEBHOOK_URL   = "";   /* optional: LeadTable Generic Webhook */
 
   var STELLE   = "Physiotherapeut:in (m/w/d)";
   var QUELLE   = "Karriere-Landingpage Physiotherapie Gscheidle";
@@ -790,9 +806,9 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
   var koView = document.getElementById("screenoutView");
   var current = 1, submitting = false, locked = false;
 
-  if (!WEBHOOK_URL) {
+  if (!WEB3FORMS_KEY && !WEBHOOK_URL) {
     document.getElementById("setupWarn").classList.add("is-visible");
-    if (window.console) console.warn("[Bewerbungsformular] Kein WEBHOOK_URL gesetzt – Bewerbungen werden nicht uebertragen.");
+    if (window.console) console.warn("[Bewerbungsformular] Weder WEB3FORMS_KEY noch WEBHOOK_URL gesetzt – Bewerbungen werden nicht uebertragen.");
   }
 
   /* ------------------------------------------------------------------
@@ -975,26 +991,77 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
     btnNext.textContent = "Wird gesendet …";
     errBox.classList.remove("is-visible");
 
-    var payload = JSON.stringify(collect());
+    var data = collect();
 
-    if (!WEBHOOK_URL){
-      if (window.console) console.warn("[Bewerbungsformular] Kein Webhook hinterlegt. Payload:", payload);
+    if (!WEB3FORMS_KEY && !WEBHOOK_URL){
+      if (window.console) console.warn("[Bewerbungsformular] Kein Empfaenger hinterlegt. Payload:", JSON.stringify(data));
       finishSuccess();
       return;
     }
 
-    fetch(WEBHOOK_URL, { method:"POST", headers:{ "Content-Type":"application/json" }, body:payload })
-      .then(function(res){ if (!res.ok) throw new Error("HTTP " + res.status); finishSuccess(); })
+    var wege = [];
+    if (WEB3FORMS_KEY) wege.push(sendeMail(data));
+    if (WEBHOOK_URL)   wege.push(sendeWebhook(data));
+
+    /* Erfolg, sobald mindestens ein Weg durchgeht – sonst Fehlermeldung. */
+    Promise.allSettled(wege).then(function(res){
+      if (res.some(function(r){ return r.status === "fulfilled"; })) finishSuccess();
+      else {
+        submitting = false;
+        btnNext.disabled = false;
+        btnNext.textContent = "Bewerbung absenden";
+        errBox.classList.add("is-visible");
+      }
+    });
+  }
+
+  /* E-Mail an die Praxis ueber web3forms. Die Feldnamen sind bewusst
+     ausgeschrieben – web3forms baut daraus die Tabelle in der Mail. */
+  function sendeMail(d){
+    var mail = {
+      access_key: WEB3FORMS_KEY,
+      subject: "Bewerbung " + STELLE + " – " + d.vorname + " " + d.nachname,
+      from_name: "Karriereseite Praxis Gscheidle",
+      replyto: d.email,
+      botcheck: "",
+      "Stelle": d.stelle,
+      "Name": d.vorname + " " + d.nachname,
+      "Telefon": d.telefon,
+      "E-Mail": d.email,
+      "Wunsch-Umfang": d.umfang,
+      "Frühester Start": d.starttermin,
+      "Berufsabschluss (Pflicht)": d.qualifikation,
+      "Deutschkenntnisse (Pflicht)": d.deutsch,
+      "Zusatzqualifikationen (optional)": d.zusatzqualifikation,
+      "Hausbesuche / Führerschein (optional)": d.hausbesuche,
+      "Bewertung": d.match,
+      "Optionale Kriterien": d.optionale_kriterien,
+      "Davon offen": d.nicht_erfuellt,
+      "Eingegangen am": d.datum,
+      "Einwilligung": d.datenschutz,
+      "Quelle": d.quelle
+    };
+    return fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(mail)
+    }).then(function(res){
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    }).then(function(out){
+      if (!out || out.success !== true) throw new Error("web3forms: " + (out && out.message));
+      return out;
+    });
+  }
+
+  /* Optionaler zweiter Weg: LeadTable Generic Webhook. */
+  function sendeWebhook(d){
+    var payload = JSON.stringify(d);
+    return fetch(WEBHOOK_URL, { method:"POST", headers:{ "Content-Type":"application/json" }, body:payload })
+      .then(function(res){ if (!res.ok) throw new Error("HTTP " + res.status); })
       .catch(function(){
         /* Zweiter Versuch ohne Preflight – manche Webhooks blocken CORS */
-        return fetch(WEBHOOK_URL, { method:"POST", mode:"no-cors", headers:{ "Content-Type":"text/plain" }, body:payload })
-          .then(finishSuccess)
-          .catch(function(){
-            submitting = false;
-            btnNext.disabled = false;
-            btnNext.textContent = "Bewerbung absenden";
-            errBox.classList.add("is-visible");
-          });
+        return fetch(WEBHOOK_URL, { method:"POST", mode:"no-cors", headers:{ "Content-Type":"text/plain" }, body:payload });
       });
   }
 

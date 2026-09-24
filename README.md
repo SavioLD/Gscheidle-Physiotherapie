@@ -13,19 +13,27 @@ Fremd-Requests (Schriften liegen im Repo).
 
 ---
 
-## Vor dem Livegang: LeadTable-Webhook eintragen
+## Vor dem Livegang: Empfänger eintragen
 
 In `index.html` im `<script>`-Block ganz unten:
 
 ```js
-var WEBHOOK_URL = "";   /* <<< LeadTable Generic Webhook hier einsetzen */
+var WEB3FORMS_KEY = "";   /* <<< Access Key von web3forms.com hier einsetzen */
+var WEBHOOK_URL   = "";   /* optional: LeadTable Generic Webhook */
 ```
 
-Solange das Feld leer ist, wird **nichts** übertragen und über dem Formular erscheint ein
-oranger Hinweis für die Praxis. Sobald die URL drinsteht, verschwindet der Hinweis und
-jede abgeschlossene Bewerbung geht als JSON per `POST` an die LeadTable-Kachel.
+**Web3Forms** ist der vorgesehene Weg: Jede abgeschlossene Bewerbung geht als
+formatierte E-Mail direkt an die Praxis. Die Empfängeradresse wird im
+web3forms-Konto hinterlegt, nicht hier – sie steht damit auch nicht im
+Quelltext und lässt sich ohne Code-Änderung wechseln. Die Mail trägt den
+Bewerber als `Reply-To`, ein Klick auf Antworten geht also direkt an ihn.
 
----
+**LeadTable** kann optional zusätzlich laufen. Sind beide gesetzt, geht die
+Bewerbung an beide; es reicht, wenn einer der Wege durchkommt.
+
+Ist keiner von beiden gesetzt, wird **nichts** übertragen und über dem Formular
+erscheint ein oranger Hinweis für die Praxis. Sobald ein Empfänger drinsteht,
+verschwindet der Hinweis von selbst.
 
 ## Aufbau der Seite
 
@@ -64,22 +72,22 @@ Sammelfeld `nicht_erfuellt`.
 Alle Fragen sind rein berufsbezogen. Es wird nicht nach Alter, Herkunft, Gesundheit,
 Religion oder Familienstand gefragt (AGG).
 
-## Was an LeadTable geht
+## Was übertragen wird
 
-Nur abgeschlossene, qualifizierte Bewerbungen, als JSON:
+Nur abgeschlossene, qualifizierte Bewerbungen. In der E-Mail stehen die Felder
+ausgeschrieben, an LeadTable gehen dieselben Daten als JSON:
 
-| Feld | Inhalt |
-|---|---|
-| `stelle` | Physiotherapeut:in (m/w/d) |
-| `vorname`, `nachname`, `telefon`, `email` | Kontaktdaten |
-| `umfang`, `starttermin` | Wunsch-Pensum und frühester Einstieg |
-| `qualifikation`, `deutsch` | Pflichtantworten, jeweils mit `(Pflicht: erfüllt)` |
-| `zusatzqualifikation`, `hausbesuche` | optionale Antworten mit `(Optional: erfüllt)` bzw. `(Optional: nicht erfüllt)` |
-| `pflichtkriterien` | `alle erfüllt` |
-| `optionale_kriterien` | z. B. `1 von 2 erfüllt` |
-| `nicht_erfuellt` | Klartextliste der offenen Punkte, sonst `–` |
-| `match` | `Top-Match` / `Guter Match` / `Grundprofil erfüllt` |
-| `datum`, `quelle`, `seite`, `datenschutz` | Metadaten |
+| Feld (E-Mail) | JSON-Schlüssel | Inhalt |
+|---|---|---|
+| Stelle | `stelle` | Physiotherapeut:in (m/w/d) |
+| Name, Telefon, E-Mail | `vorname`, `nachname`, `telefon`, `email` | Kontaktdaten |
+| Wunsch-Umfang, Frühester Start | `umfang`, `starttermin` | Pensum und Einstieg |
+| Berufsabschluss / Deutschkenntnisse (Pflicht) | `qualifikation`, `deutsch` | jeweils mit `(Pflicht: erfüllt)` |
+| Zusatzqualifikationen / Hausbesuche (optional) | `zusatzqualifikation`, `hausbesuche` | mit `(Optional: erfüllt)` bzw. `(Optional: nicht erfüllt)` |
+| Optionale Kriterien | `optionale_kriterien` | z. B. `1 von 2 erfüllt` |
+| Davon offen | `nicht_erfuellt` | Klartextliste, sonst `–` |
+| Bewertung | `match` | `Top-Match` / `Guter Match` / `Grundprofil erfüllt` |
+| Eingegangen am, Einwilligung, Quelle | `datum`, `datenschutz`, `quelle`, `seite` | Metadaten |
 
 ## Mobile Laufruhe
 
