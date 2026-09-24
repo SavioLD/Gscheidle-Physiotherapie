@@ -1,6 +1,6 @@
 # Ad-Creatives · Physiotherapeut:in (m/w/d)
 
-Recruiting-Motive für Meta in zwei Formaten – **Feed 4:5 (1080×1350)** und
+Acht Recruiting-Motive für Meta in zwei Formaten – **Feed 4:5 (1080×1350)** und
 **Story/Reels 9:16 (1080×1920)**. Gebaut als HTML/CSS in [`index.html`](index.html),
 gerendert als PNG nach [`png/`](png). Farben, Logo und Schriften kommen aus
 derselben CI wie die Karriereseite.
@@ -8,9 +8,9 @@ derselben CI wie die Karriereseite.
 Die Anzeigentexte stehen in [`WERBETEXTE.md`](WERBETEXTE.md) – ein Satz für alle
 Motive, damit sich die Motive sauber gegeneinander messen lassen.
 
-## Die vier Konzepte
+## Die acht Konzepte
 
-Alle vier kommen **ohne Fotos** aus: nur Typografie, CI-Farben und das Logo.
+Alle kommen **ohne Fotos** aus: nur Typografie, CI-Farben und das Logo.
 Sie sind damit sofort schaltbar.
 
 | Konzept | Hook | Fläche |
@@ -19,10 +19,19 @@ Sie sind damit sofort schaltbar.
 | `fortbildung` | „Deine nächste Fortbildung zahlen wir." – MT, MLD, Bobath, CMD | helle Fläche |
 | `dreizehn` | „13 Kolleg:innen. Eine:r fehlt noch." – Team und Rezeption | Türkis |
 | `ohne-lebenslauf` | „Vier Fragen. Kein Lebenslauf." – Anti-Aufwand, gut fürs Retargeting | dunkelgrüner Verlauf |
+| `zeit-pro-patient` | „Wie viel Zeit bleibt dir pro Patient?" – die Frage, die keiner stellt | helle Fläche |
+| `spektrum` | „Kein Tag wie der davor." – das Behandlungsspektrum als Wortfeld | dunkelgrüner Verlauf |
+| `rezeption` | „Termine macht die Rezeption. Du machst Therapie." – weniger Papierkram | Türkis |
+| `seit-1998` | „1998 gegründet. Nie ein Fließband." – Stabilität | dunkelgrüner Verlauf |
 
 Bewusst kein „Wir suchen …": Jedes Motiv nennt einen konkreten Grund, warum die
 Stelle besser ist als die aktuelle – das zieht qualifizierte Bewerber:innen an
 statt möglichst vieler.
+
+**Nicht alle acht gleichzeitig schalten.** Bei 15–25 € Tagesbudget zersplittert
+das die Ausspielung, und keins bekommt genug Daten. Mit vier starten, nach
+5–7 Tagen die schwächsten zwei gegen frische tauschen (Vorschlag in
+[`WERBETEXTE.md`](WERBETEXTE.md)).
 
 ## Neu rendern
 

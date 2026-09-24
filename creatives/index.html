@@ -62,7 +62,7 @@ h1{font-family:"Montserrat",sans-serif;font-weight:800;line-height:1.04;letter-s
 .canvas--story h1{font-size:124px}
 h1 em{font-style:normal}
 .t-dark h1{color:#fff}  .t-dark h1 em{color:var(--mint)}
-.t-mint h1{color:var(--ink-900)} .t-mint h1 em{color:#fff}
+.t-mint h1{color:rgba(12,51,47,.68)} .t-mint h1 em{color:var(--ink-900)}
 .t-light h1{color:var(--ink)} .t-light h1 em{color:#1E7A70}
 
 .sub{font-size:38px;line-height:1.38;font-weight:500;max-width:840px}
@@ -83,13 +83,14 @@ h1 em{font-style:normal}
 
 /* grosse Zahl */
 .bignum{font-family:"Montserrat",sans-serif;font-weight:800;font-size:250px;line-height:.86;letter-spacing:-.04em}
+.bignum.is-long{font-size:170px}
+.canvas--story .bignum.is-long{font-size:205px}
 .canvas--story .bignum{font-size:300px}
 .t-dark .bignum{color:var(--mint)}
 .t-mint .bignum{color:#fff}
 .t-light .bignum{color:#1E7A70}
 
 /* Wort-Wolke der Therapien */
-.spектrum{display:none}
 .terms{display:flex;flex-wrap:wrap;gap:16px 14px;max-width:900px}
 .term{font-family:"Montserrat",sans-serif;font-weight:700;font-size:35px;padding:14px 26px;border-radius:999px;white-space:nowrap}
 .canvas--story .term{font-size:39px;padding:16px 30px}
@@ -161,6 +162,34 @@ const MOTIVE = [
     sub:'11 Therapeut:innen zum Fachsimpeln und zwei Kolleginnen an der Rezeption, die dir Termine und Papierkram abnehmen.'
   },
   {
+    name:'zeit-pro-patient', theme:'t-light',
+    eyebrow:'Physiotherapeut:in (m/w/d)',
+    h1:'Wie viel Zeit bleibt dir <em>pro Patient</em>?',
+    sub:'Eine Frage, die in Vorstellungsgesprächen zu selten gestellt wird. Bei uns darfst du sie stellen – und bekommst eine ehrliche Antwort, bevor du unterschreibst.',
+    ticks:['Befund und Therapieplan liegen bei dir','Kurze Absprachen im Team statt langer Dienstwege']
+  },
+  {
+    name:'spektrum', theme:'t-dark',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
+    h1:'Kein Tag wie <em>der davor</em>.',
+    terms:['Krankengymnastik','Manuelle Therapie','Lymphdrainage','Kinderbobath','CMD','Stoßwelle','Elektrotherapie','Kinesiotaping'],
+    sub:'Das ganze Spektrum statt Behandlung von der Stange. Was dir noch fehlt, bilden wir dir fort.'
+  },
+  {
+    name:'rezeption', theme:'t-mint',
+    eyebrow:'Wir stellen ein · Rottweil',
+    h1:'Termine macht die Rezeption. <em>Du machst Therapie.</em>',
+    sub:'Zwei Kolleginnen am Empfang nehmen dir Terminplanung und Papierkram ab. Damit du das machst, wofür du ausgebildet bist.',
+    ticks:['Voll- oder Teilzeit, unbefristet','Keine Wochenenddienste']
+  },
+  {
+    name:'seit-1998', theme:'t-dark',
+    eyebrow:'Physiotherapeut:in (m/w/d)',
+    bignum:'1998',
+    h1:'gegründet. <em>Nie ein Fließband.</em>',
+    sub:'Praxen kommen und gehen. Wir sind seit über 25 Jahren in Rottweil – gewachsen auf 13 Kolleg:innen und jetzt auf der Suche nach Verstärkung.'
+  },
+  {
     name:'ohne-lebenslauf', theme:'t-dark',
     eyebrow:'Physiotherapeut:in (m/w/d)',
     h1:'Vier Fragen. <em>Kein Lebenslauf.</em>',
@@ -177,7 +206,7 @@ function build(m, fmt){
   const logo = m.theme === 't-dark' ? '../assets/logo-weiss.png' : '../assets/logo.png';
 
   const middle = [];
-  if (m.bignum) middle.push(`<div class="bignum">${m.bignum}</div>`);
+  if (m.bignum) middle.push(`<div class="bignum${m.bignum.length > 2 ? ' is-long' : ''}">${m.bignum}</div>`);
   middle.push(`<h1>${m.h1}</h1>`);
   if (m.terms) middle.push(`<div class="terms">${m.terms.map((t,i) =>
       `<span class="term${i % 3 === 0 ? ' is-hot' : ''}">${t}</span>`).join('')}</div>`);

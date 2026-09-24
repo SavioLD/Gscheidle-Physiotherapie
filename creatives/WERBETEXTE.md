@@ -1,6 +1,6 @@
 # Anzeigentexte · Physiotherapeut:in (m/w/d) · Praxis Gscheidle, Rottweil
 
-Ein Textsatz für alle Motive – nicht pro Bild ein eigener Text. Die vier Motive
+Ein Textsatz für alle Motive – nicht pro Bild ein eigener Text. Die acht Motive
 in [`png/`](png) sind reine Bildvarianten desselben Angebots; so lässt sich
 sauber messen, welches Motiv zieht, ohne dass der Text als zweite Variable
 dazwischenfunkt.
@@ -71,20 +71,25 @@ Event beim Absenden rein; danach kann die Kampagne auf Conversions laufen.
 
 ### Struktur
 
+Acht Motive stehen bereit, geschaltet werden aber nur vier gleichzeitig –
+sonst zersplittert das Budget und keins bekommt genug Daten.
+
 ```
 Kampagne: Recruiting Physiotherapeut:in Rottweil
 └── Anzeigengruppe: Rottweil 35 km
     ├── Anzeige 1: wochenende        (stärkstes Differenzierungsargument)
     ├── Anzeige 2: fortbildung       (spricht Qualifizierte an)
     ├── Anzeige 3: dreizehn          (Team, emotional)
-    └── Anzeige 4: ohne-lebenslauf   (Anti-Aufwand)
+    └── Anzeige 4: zeit-pro-patient  (trifft den wundesten Punkt)
 Retargeting (ab ~300 Seitenaufrufen):
 └── Anzeigengruppe: Website-Besucher 30 Tage, ohne Absender
     └── Anzeige: ohne-lebenslauf
 ```
 
-Mit allen vier Motiven gleichzeitig starten und Meta ausspielen lassen; nach
-5–7 Tagen die schwächsten abschalten statt früher einzugreifen.
+**Nachrücker für Welle 2**, wenn nach 5–7 Tagen die schwächsten zwei
+abgeschaltet werden: `rezeption`, `spektrum`, `seit-1998`.
+
+Nicht früher eingreifen – Meta braucht die ersten Tage zum Einpendeln.
 
 ---
 
