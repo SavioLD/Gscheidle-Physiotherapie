@@ -17,7 +17,7 @@ Sie sind damit sofort schaltbar.
 |---|---|---|
 | `wochenende` | „Samstag gehört dir." – Mo–Fr, 07–19 Uhr, keine Wochenenddienste | dunkelgrüner Verlauf |
 | `fortbildung` | „Deine nächste Fortbildung zahlen wir." – MT, MLD, Bobath, CMD | helle Fläche |
-| `dreizehn` | „13 Kolleg:innen. Eine:r fehlt noch." – Team und Rezeption | Türkis |
+| `sieben` | „7 Kolleg:innen. Eine:r fehlt noch." – Team und Rezeption | Türkis |
 | `ohne-lebenslauf` | „Vier Fragen. Kein Lebenslauf." – Anti-Aufwand, gut fürs Retargeting | dunkelgrüner Verlauf |
 | `zeit-pro-patient` | „Wie viel Zeit bleibt dir pro Patient?" – die Frage, die keiner stellt | helle Fläche |
 | `spektrum` | „Kein Tag wie der davor." – das Behandlungsspektrum als Wortfeld | dunkelgrüner Verlauf |
@@ -67,5 +67,5 @@ Ein neuer Eintrag erzeugt beim nächsten `render.py` automatisch beide Formate.
 Die Motive sind so gebaut, dass ein Foto als Hintergrund ergänzt werden kann,
 ohne die Textebene anzufassen: Foto in `../bilder/` ablegen, im `.canvas` als
 `background-image` setzen und den bestehenden Farbverlauf als Overlay
-darüberlegen. `wochenende` und `dreizehn` profitieren am meisten von einem
+darüberlegen. `wochenende` und `sieben` profitieren am meisten von einem
 echten Team- oder Praxisbild.

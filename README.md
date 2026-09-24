@@ -31,7 +31,7 @@ jede abgeschlossene Bewerbung geht als JSON per `POST` an die LeadTable-Kachel.
 
 1. **Topbar** – Logo, Ankernavigation, „Jetzt bewerben“
 2. **Hero** – Logo, Stellentitel, Kurzversprechen, zwei CTAs (passt komplett in den ersten Bildschirm)
-3. **Trust-Strip** – Seit 1998 · 13 Kolleg:innen · Mo–Fr 07–19 Uhr · Königstraße 28
+3. **Trust-Strip** – Seit 1998 · 7 Kolleg:innen · Mo–Fr 07–19 Uhr · Königstraße 28
 4. **Die Stelle** – Aufgaben und Anforderungen, Pflicht und Wünschenswert getrennt ausgewiesen
 5. **Warum Gscheidle** – sechs Benefits
 6. **Ablauf** – drei Schritte

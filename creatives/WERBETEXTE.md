@@ -14,7 +14,7 @@ dazwischenfunkt.
 
 > Du behandelst gerne – aber nicht im 20-Minuten-Takt zwischen Tür und Angel?
 >
-> Die Physiotherapiepraxis Gscheidle in Rottweil sucht eine:n Physiotherapeut:in (m/w/d) in Voll- oder Teilzeit. 13 Kolleg:innen, das volle Behandlungsspektrum von Krankengymnastik über Manuelle Therapie bis Lymphdrainage, und zwei Kolleginnen an der Rezeption, die dir Termine und Papierkram abnehmen.
+> Die Physiotherapiepraxis Gscheidle in Rottweil sucht eine:n Physiotherapeut:in (m/w/d) in Voll- oder Teilzeit. 7 Kolleg:innen, das volle Behandlungsspektrum von Krankengymnastik über Manuelle Therapie und Lymphdrainage bis Kinderbobath, und zwei Kolleginnen an der Rezeption, die dir Termine und Papierkram abnehmen.
 >
 > ✔ Montag bis Freitag, 07:00–19:00 Uhr – keine Wochenenddienste
 > ✔ Voll- oder Teilzeit, 20 bis 40 Stunden, unbefristet
@@ -35,7 +35,7 @@ dazwischenfunkt.
 **Alternativen zum Testen**
 
 - Ohne Wochenenddienste. Mit Fortbildungsbudget.
-- 13 Kolleg:innen – eine:r fehlt noch
+- 7 Kolleg:innen – eine:r fehlt noch
 - Bewerben in 60 Sekunden, ohne Lebenslauf
 
 ---
@@ -79,7 +79,7 @@ Kampagne: Recruiting Physiotherapeut:in Rottweil
 └── Anzeigengruppe: Rottweil 35 km
     ├── Anzeige 1: wochenende        (stärkstes Differenzierungsargument)
     ├── Anzeige 2: fortbildung       (spricht Qualifizierte an)
-    ├── Anzeige 3: dreizehn          (Team, emotional)
+    ├── Anzeige 3: sieben            (Team, emotional)
     └── Anzeige 4: zeit-pro-patient  (trifft den wundesten Punkt)
 Retargeting (ab ~300 Seitenaufrufen):
 └── Anzeigengruppe: Website-Besucher 30 Tage, ohne Absender
