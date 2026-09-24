@@ -1,0 +1,15 @@
+Bildmaterial der Praxis bitte hier ablegen.
+
+Hero-Bild der Karriereseite
+---------------------------
+Dateiname:  hero.jpg   (alternativ hero.jpeg / hero.png / hero.webp)
+Format:     Querformat, mindestens 1600 px breit
+Motiv:      Behandlungsraum, Team oder Praxis. Das Motiv sollte rechts
+            liegen - links liegt die Textflaeche des Heros.
+
+Liegt kein Bild hier, bleibt im Hero der CI-Farbverlauf stehen. Es wird
+also nie ein kaputtes Bild angezeigt.
+
+Weiteres Material fuer die Meta-Creatives (Schritt 2) kann ebenfalls in
+diesen Ordner - gerne mit sprechenden Dateinamen, z. B.:
+  team.jpg, behandlung-mt.jpg, empfang.jpg, praxis-aussen.jpg
