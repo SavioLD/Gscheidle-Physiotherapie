@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="UTF-8" />
+<title>Ad-Creatives · Physiotherapie Gscheidle</title>
+<style>
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:600;src:url("../assets/fonts/montserrat-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:700;src:url("../assets/fonts/montserrat-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:800;src:url("../assets/fonts/montserrat-latin-800-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;src:url("../assets/fonts/inter-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;src:url("../assets/fonts/inter-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;src:url("../assets/fonts/inter-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;src:url("../assets/fonts/inter-latin-700-normal.woff2") format("woff2")}
+
+:root{
+  --mint:#59C3B7;
+  --ink:#134842;
+  --ink-900:#0C332F;
+  --soft:#F2FAF8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#DCE5E3;font-family:"Inter",sans-serif;padding:40px;display:flex;flex-wrap:wrap;gap:40px}
+body.render{background:#fff;padding:0;gap:0;display:block}
+body.render .canvas{margin:0 0 1px 0}
+
+/* ---------- Grundgeruest ---------- */
+.canvas{position:relative;overflow:hidden;flex:0 0 auto;display:flex;flex-direction:column;
+        justify-content:space-between;color:#fff;isolation:isolate}
+.canvas--45{width:1080px;height:1350px;padding:88px 84px}
+.canvas--story{width:1080px;height:1920px;padding:210px 84px 190px}
+
+/* Farbwelten */
+.t-dark{background:linear-gradient(140deg,#0A2E2A 0%,#134842 46%,#2A9E90 100%)}
+.t-mint{background:var(--mint);color:var(--ink-900)}
+.t-light{background:var(--soft);color:var(--ink)}
+
+/* dezente Figur als Wasserzeichen, damit die Flaeche nicht leer wirkt */
+.canvas__mark{position:absolute;z-index:-1;pointer-events:none}
+.canvas--45 .canvas__mark{right:-110px;bottom:-70px;width:440px;height:auto}
+.canvas--story .canvas__mark{right:-130px;bottom:-40px;width:540px;height:auto}
+.t-dark .canvas__mark{opacity:.16}
+.t-mint .canvas__mark{opacity:.10}
+.t-light .canvas__mark{opacity:.055}
+
+/* ---------- Kopf ---------- */
+.head{display:flex;align-items:flex-start;justify-content:space-between;gap:30px}
+.head__logo{width:330px;height:auto}
+.canvas--story .head__logo{width:390px}
+
+.eyebrow{display:inline-flex;align-self:flex-start;align-items:center;gap:15px;font-family:"Montserrat",sans-serif;
+         font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:23px;
+         padding:15px 28px;border-radius:999px}
+.canvas--story .eyebrow{font-size:26px;padding:17px 32px}
+.eyebrow .dot{width:15px;height:15px;border-radius:50%;background:currentColor}
+.t-dark .eyebrow{color:var(--mint);background:rgba(89,195,183,.14);border:2px solid rgba(89,195,183,.38)}
+.t-mint .eyebrow{color:var(--ink-900);background:rgba(12,51,47,.10);border:2px solid rgba(12,51,47,.22)}
+.t-light .eyebrow{color:#1E7A70;background:#E7F6F3;border:2px solid rgba(30,122,112,.24)}
+
+/* ---------- Mitte ---------- */
+.body{display:flex;flex-direction:column;gap:34px}
+h1{font-family:"Montserrat",sans-serif;font-weight:800;line-height:1.04;letter-spacing:-.022em;font-size:106px}
+.canvas--story h1{font-size:124px}
+h1 em{font-style:normal}
+.t-dark h1{color:#fff}  .t-dark h1 em{color:var(--mint)}
+.t-mint h1{color:var(--ink-900)} .t-mint h1 em{color:#fff}
+.t-light h1{color:var(--ink)} .t-light h1 em{color:#1E7A70}
+
+.sub{font-size:38px;line-height:1.38;font-weight:500;max-width:840px}
+.canvas--story .sub{font-size:43px}
+.t-dark .sub{color:rgba(255,255,255,.90)}
+.t-mint .sub{color:rgba(12,51,47,.82)}
+.t-light .sub{color:#3E635D}
+
+/* Haken-Liste */
+.ticks{display:flex;flex-direction:column;gap:22px;font-size:37px;font-weight:600;line-height:1.25}
+.canvas--story .ticks{font-size:42px;gap:26px}
+.ticks div{display:flex;align-items:flex-start;gap:22px}
+.ticks svg{width:44px;height:44px;flex:0 0 auto;margin-top:2px;stroke-width:3.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.canvas--story .ticks svg{width:50px;height:50px}
+.t-dark .ticks{color:#fff} .t-dark .ticks svg{stroke:var(--mint)}
+.t-mint .ticks{color:var(--ink-900)} .t-mint .ticks svg{stroke:#fff}
+.t-light .ticks{color:var(--ink)} .t-light .ticks svg{stroke:#1E7A70}
+
+/* grosse Zahl */
+.bignum{font-family:"Montserrat",sans-serif;font-weight:800;font-size:250px;line-height:.86;letter-spacing:-.04em}
+.canvas--story .bignum{font-size:300px}
+.t-dark .bignum{color:var(--mint)}
+.t-mint .bignum{color:#fff}
+.t-light .bignum{color:#1E7A70}
+
+/* Wort-Wolke der Therapien */
+.spектrum{display:none}
+.terms{display:flex;flex-wrap:wrap;gap:16px 14px;max-width:900px}
+.term{font-family:"Montserrat",sans-serif;font-weight:700;font-size:35px;padding:14px 26px;border-radius:999px;white-space:nowrap}
+.canvas--story .term{font-size:39px;padding:16px 30px}
+.t-dark .term{color:#fff;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.22)}
+.t-light .term{color:var(--ink);background:#fff;border:2px solid rgba(19,72,66,.16)}
+.term.is-hot{background:var(--mint);border-color:var(--mint);color:var(--ink-900)}
+.t-light .term.is-hot{background:#1E7A70;border-color:#1E7A70;color:#fff}
+
+/* ---------- Fuss ---------- */
+.foot{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:34px}
+.t-dark .foot{border-top:2px solid rgba(255,255,255,.20)}
+.t-mint .foot{border-top:2px solid rgba(12,51,47,.20)}
+.t-light .foot{border-top:2px solid rgba(19,72,66,.16)}
+.foot__txt{font-size:30px;font-weight:600;line-height:1.3}
+.canvas--story .foot__txt{font-size:34px}
+.t-dark .foot__txt{color:rgba(255,255,255,.82)}
+.t-mint .foot__txt{color:rgba(12,51,47,.78)}
+.t-light .foot__txt{color:#3E635D}
+.foot__txt b{display:block;font-family:"Montserrat",sans-serif;font-weight:700}
+.t-dark .foot__txt b{color:#fff} .t-mint .foot__txt b{color:var(--ink-900)} .t-light .foot__txt b{color:var(--ink)}
+
+.cta{display:inline-flex;align-items:center;gap:18px;font-family:"Montserrat",sans-serif;font-weight:800;
+     font-size:33px;padding:26px 44px;border-radius:16px;white-space:nowrap}
+.canvas--story .cta{font-size:37px;padding:29px 50px}
+.cta svg{width:34px;height:34px;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:currentColor}
+.t-dark .cta{background:var(--mint);color:var(--ink-900)}
+.t-mint .cta{background:var(--ink);color:#fff}
+.t-light .cta{background:#1E7A70;color:#fff}
+
+.label{width:100%;font:600 15px "Inter",sans-serif;color:#33544E;margin:-22px 0 -20px}
+body.render .label{display:none}
+</style>
+</head>
+<body>
+<div id="out"></div>
+
+<script>
+const TICK  = '<svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>';
+const ARROW = '<svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>';
+
+/* Wasserzeichen: die Figur direkt aus dem Logo, je nach Flaeche hell oder dunkel. */
+const MARK = t => `<img class="canvas__mark" src="../assets/${t === 't-dark' ? 'figur.png' : 'figur-dunkel.png'}" alt="" />`;
+
+const FOOT = {
+  txt:'<b>Physiotherapiepraxis Gscheidle GmbH</b>Königstraße 28 · Rottweil · seit 1998',
+  cta:'In 60 Sek. bewerben'
+};
+
+const MOTIVE = [
+  {
+    name:'wochenende', theme:'t-dark',
+    eyebrow:'Physiotherapeut:in (m/w/d)',
+    h1:'Samstag gehört <em>dir</em>.',
+    sub:'Montag bis Freitag, 07:00–19:00 Uhr. Keine Wochenenddienste, keine Rufbereitschaft – und deine Zeiten legen wir gemeinsam fest.',
+    ticks:['Voll- oder Teilzeit, 20–40 Stunden','Unbefristet, mitten in Rottweil']
+  },
+  {
+    name:'fortbildung', theme:'t-light',
+    eyebrow:'Physiotherapeut:in (m/w/d)',
+    h1:'Deine nächste Fortbildung <em>zahlen wir</em>.',
+    sub:'MT, Lymphdrainage, Bobath, CMD – wir beteiligen uns an den Kosten und stellen dich dafür frei.',
+    ticks:['Zusatzqualifikationen willkommen, aber kein Muss','Volles Behandlungsspektrum statt Behandlung von der Stange']
+  },
+  {
+    name:'dreizehn', theme:'t-mint',
+    eyebrow:'Wir stellen ein · Rottweil',
+    bignum:'13',
+    h1:'Kolleg:innen. <em>Eine:r fehlt noch.</em>',
+    sub:'11 Therapeut:innen zum Fachsimpeln und zwei Kolleginnen an der Rezeption, die dir Termine und Papierkram abnehmen.'
+  },
+  {
+    name:'ohne-lebenslauf', theme:'t-dark',
+    eyebrow:'Physiotherapeut:in (m/w/d)',
+    h1:'Vier Fragen. <em>Kein Lebenslauf.</em>',
+    sub:'Die kürzeste Bewerbung deines Lebens – und danach wisst ihr beide, ob es passt.',
+    ticks:['Kein Anschreiben, keine Zeugnisse','Wir melden uns persönlich, meist telefonisch']
+  }
+];
+
+function build(m, fmt){
+  const story = fmt === 'story';
+  const el = document.createElement('div');
+  el.className = `canvas canvas--${story ? 'story' : '45'} ${m.theme}`;
+  el.dataset.name = `${m.name}-${story ? 'story' : '45'}`;
+  const logo = m.theme === 't-dark' ? '../assets/logo-weiss.png' : '../assets/logo.png';
+
+  const middle = [];
+  if (m.bignum) middle.push(`<div class="bignum">${m.bignum}</div>`);
+  middle.push(`<h1>${m.h1}</h1>`);
+  if (m.terms) middle.push(`<div class="terms">${m.terms.map((t,i) =>
+      `<span class="term${i % 3 === 0 ? ' is-hot' : ''}">${t}</span>`).join('')}</div>`);
+  if (m.sub)   middle.push(`<p class="sub">${m.sub}</p>`);
+  if (m.ticks) middle.push(`<div class="ticks">${m.ticks.map(t =>
+      `<div>${TICK}<span>${t}</span></div>`).join('')}</div>`);
+
+  el.innerHTML = `
+    ${MARK(m.theme)}
+    <div class="head">
+      <img class="head__logo" src="${logo}" alt="" />
+    </div>
+    <div class="body">
+      <span class="eyebrow"><span class="dot"></span>${m.eyebrow}</span>
+      ${middle.join('')}
+    </div>
+    <div class="foot">
+      <div class="foot__txt">${FOOT.txt}</div>
+      <span class="cta">${FOOT.cta}${ARROW}</span>
+    </div>`;
+  return el;
+}
+
+const out = document.getElementById('out');
+const render = new URLSearchParams(location.search).has('render');
+if (render) document.body.classList.add('render');
+MOTIVE.forEach(m => ['45','story'].forEach(f => {
+  if (!render){
+    const lab = document.createElement('div');
+    lab.className = 'label';
+    lab.textContent = `${m.name} · ${f === '45' ? '4:5 Feed' : '9:16 Story'}`;
+    out.appendChild(lab);
+  }
+  out.appendChild(build(m, f));
+}));
+</script>
+</body>
+</html>
