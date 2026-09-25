@@ -16,7 +16,7 @@ Sie sind damit sofort schaltbar.
 | Konzept | Hook | Fläche |
 |---|---|---|
 | `wochenende` | „Samstag gehört dir." – Mo–Fr, 07–19 Uhr, keine Wochenenddienste | dunkelgrüner Verlauf |
-| `fortbildung` | „Deine nächste Fortbildung zahlen wir." – MT, MLD, Bobath, CMD | helle Fläche |
+| `fortbildung` | „Fortbildung? Zahlen wir." – MT, MLD, Bobath, CMD, nach Absprache | helle Fläche |
 | `sieben` | „7 Kolleg:innen. Eine:r fehlt noch." – Team und Rezeption | Türkis |
 | `ohne-lebenslauf` | „Vier Fragen. Kein Lebenslauf." – Anti-Aufwand, gut fürs Retargeting | dunkelgrüner Verlauf |
 | `zeit-pro-patient` | „Wie viel Zeit bleibt dir pro Patient?" – die Frage, die keiner stellt | helle Fläche |

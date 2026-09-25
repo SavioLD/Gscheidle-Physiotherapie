@@ -18,14 +18,14 @@ dazwischenfunkt.
 >
 > ✔ Montag bis Freitag, 07:00–19:00 Uhr – keine Wochenenddienste
 > ✔ Voll- oder Teilzeit, 20 bis 40 Stunden, unbefristet
-> ✔ Fortbildungen wie MT, MLD oder Bobath fördern wir
+> ✔ Fortbildungen wie MT, MLD oder Bobath nach Absprache bezahlt
 > ✔ Geschäftswagen für die Hausbesuche möglich
 >
 > Bewerben dauert unter 60 Sekunden: vier Fragen beantworten, Kontaktdaten hinterlassen, fertig. Kein Anschreiben, kein Lebenslauf.
 
 ### Kurzvariante (für Stories und Reels)
 
-> Physiotherapeut:in (m/w/d) in Rottweil gesucht. Voll- oder Teilzeit, unbefristet, keine Wochenenddienste. Fortbildungen zahlen wir. Bewerben in unter 60 Sekunden – ohne Anschreiben, ohne Lebenslauf.
+> Physiotherapeut:in (m/w/d) in Rottweil gesucht. Voll- oder Teilzeit, unbefristet, keine Wochenenddienste. Fortbildungen nach Absprache bezahlt. Bewerben in unter 60 Sekunden – ohne Anschreiben, ohne Lebenslauf.
 
 ---
 
@@ -35,7 +35,7 @@ dazwischenfunkt.
 
 **Alternativen zum Testen**
 
-- Ohne Wochenenddienste. Mit Fortbildungsbudget.
+- Ohne Wochenenddienste. Fortbildung wird bezahlt.
 - 7 Kolleg:innen – eine:r fehlt noch
 - Bewerben in 60 Sekunden, ohne Lebenslauf
 
@@ -48,7 +48,7 @@ dazwischenfunkt.
 **Alternativen zum Testen**
 
 - Praxis Gscheidle · seit 1998 in Rottweil
-- Mo–Fr, 07–19 Uhr · Fortbildung wird gefördert
+- Mo–Fr, 07–19 Uhr · Fortbildung nach Absprache bezahlt
 
 ---
 
