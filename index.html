@@ -29,7 +29,7 @@
   "@context": "https://schema.org",
   "@type": "JobPosting",
   "title": "Physiotherapeut:in (m/w/d)",
-  "description": "Die Physiotherapiepraxis Gscheidle GmbH in Rottweil sucht eine:n Physiotherapeut:in (m/w/d) in Voll- oder Teilzeit. Befundaufnahme und eigenverantwortliche Therapieplanung, Behandlung in Krankengymnastik, Manueller Therapie, Manueller Lymphdrainage und so weiter, Hausbesuche nach Absprache. Unbefristete Festanstellung, keine Wochenenddienste, Fortbildungen werden nach Absprache bezahlt.",
+  "description": "Die Physiotherapiepraxis Gscheidle GmbH in Rottweil sucht eine:n Physiotherapeut:in (m/w/d) in Voll- oder Teilzeit. Befundaufnahme und eigenverantwortliche Therapieplanung, Behandlung in Krankengymnastik, Manueller Therapie und Manueller Lymphdrainage, Hausbesuche nach Absprache. Unbefristete Festanstellung, keine Wochenenddienste, Fortbildungen werden nach Absprache bezahlt.",
   "datePosted": "2026-09-24",
   "employmentType": ["FULL_TIME", "PART_TIME"],
   "hiringOrganization": {
@@ -187,6 +187,14 @@ section{padding:88px 0}
 .benefit__ic svg{width:23px;height:23px;stroke:var(--brand)}
 .benefit b{display:block;font-family:var(--f-display);font-weight:700;font-size:17.5px;color:var(--brand-800);margin-bottom:8px}
 .benefit p{color:var(--ink-soft);font-size:15px}
+/* Hervorgehobene Kachel: volle Breite, CI-Verlauf – fuer den Dienstwagen. */
+.benefit--hero{grid-column:1/-1;background:var(--grad);border-color:transparent;display:flex;align-items:center;gap:26px;padding:30px 34px}
+.benefit--hero .benefit__ic{margin-bottom:0;flex:0 0 auto;width:58px;height:58px;background:rgba(89,195,183,.20)}
+.benefit--hero .benefit__ic svg{stroke:var(--mint);width:29px;height:29px}
+.benefit--hero b{color:#fff;font-size:21px;display:block;margin-bottom:7px}
+.benefit--hero p{color:rgba(255,255,255,.90);font-size:16px;max-width:760px}
+.benefit--hero p b{display:inline;font-size:inherit;margin:0;color:#fff}
+.benefit__pill{display:inline-block;font-family:var(--f-body);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--brand-900);background:var(--mint);border-radius:999px;padding:4px 12px;vertical-align:middle;margin-left:4px}
 
 /* ---------- ablauf ---------- */
 .process{background:#fff}
@@ -297,10 +305,6 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
 .reveal.is-in{opacity:1;transform:none}
 
 /* ---------- responsive ---------- */
-/* Sieben Kacheln in drei Spalten lassen eine allein stehen – die wird mittig gesetzt. */
-@media (min-width:981px){
-  .benefit-grid > .benefit:last-child:nth-child(3n+1){grid-column:2}
-}
 @media (max-width:980px){
   .job{grid-template-columns:1fr;gap:26px}
   .benefit-grid,.steps{grid-template-columns:repeat(2,1fr)}
@@ -324,6 +328,8 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
   .benefit-grid,.steps,.footer__grid{grid-template-columns:1fr}
   .job{padding:24px 20px}
   .job__head{flex-direction:column;gap:14px}
+  .benefit--hero{flex-direction:column;align-items:flex-start;gap:16px;padding:26px 22px}
+  .benefit--hero b{font-size:19px}
   .form-card{border-radius:16px;margin-top:26px}
   .form-card__head{padding:18px 18px 0}
   .form-card__body{padding:18px 18px 22px}
@@ -457,8 +463,8 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
           <h4>Deine Aufgaben</h4>
           <ul class="ticks">
             <li><b>Befund und Therapieplan</b> – eigenverantwortlich, am Menschen orientiert, nicht am Schema</li>
-            <li>Behandlung in <b>Krankengymnastik, Manueller Therapie, Manueller Lymphdrainage</b> und so weiter</li>
-            <li><b>Hausbesuche und Pflegeheime</b> in Rottweil und Umgebung – nach Absprache, nicht als Dauerauftrag. Ein <b>Geschäftswagen</b> dafür lässt sich einrichten</li>
+            <li>Behandlung in <b>Krankengymnastik, Manueller Therapie, Manueller Lymphdrainage</b></li>
+            <li><b>Hausbesuche und Pflegeheime</b> in Rottweil und Umgebung – nach Absprache, nicht als Dauerauftrag. Den <b>Dienstwagen</b> dafür stellen wir</li>
             <li>Kurze fachliche Absprachen im Team statt langer Dienstwege</li>
           </ul>
         </div>
@@ -468,7 +474,7 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
           <ul class="ticks">
             <li><b>Pflicht:</b> abgeschlossene Ausbildung oder Studium als Physiotherapeut:in mit Berufszulassung in Deutschland</li>
             <li><b>Pflicht:</b> Deutsch mindestens auf Niveau B2 – du führst Patientengespräche und dokumentierst</li>
-            <li><b>Wünschenswert:</b> Zusatzqualifikationen wie MT, MLD, Bobath, KGG oder CMD – und Erfahrung mit Stoßwellentherapie</li>
+            <li><b>Wünschenswert:</b> Zusatzqualifikationen wie MT, MLD, Bobath, KGG oder CMD</li>
             <li><b>Wünschenswert:</b> Führerschein Klasse B für gelegentliche Hausbesuche</li>
             <li>Verlässlichkeit und Lust auf Abwechslung – kein Tag sieht bei uns aus wie der davor</li>
           </ul>
@@ -493,6 +499,13 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
     <p class="sec-lead">Seit 1998 in Rottweil, gewachsen auf 7 Kolleg:innen. Wir behandeln in der Praxis, bei Hausbesuchen und in den Pflegeheimen der Region – mit dem vollen Spektrum statt Behandlung von der Stange.</p>
 
     <div class="benefit-grid">
+      <div class="benefit benefit--hero reveal">
+        <div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.6-5.3A2 2 0 0 0 15.5 10h-7a2 2 0 0 0-1.9 1.7z"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/><path d="M3 13h1M20 13h1"/></svg></div>
+        <div>
+          <b>Dienstwagen <span class="benefit__pill">auch privat</span></b>
+          <p>Für die Hausbesuche stellen wir dir einen Dienstwagen. Und der steht dir <b>auch zur privaten Nutzung</b> zur Verfügung – nicht nur für Termine.</p>
+        </div>
+      </div>
       <div class="benefit reveal">
         <div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 12h.01M18 12h.01"/></svg></div>
         <b>Faire, pünktliche Vergütung</b>
@@ -517,11 +530,6 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
         <div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-9.3-8.6A5.5 5.5 0 0 1 12 6.2a5.5 5.5 0 0 1 9.3 6.2C19 16.6 12 21 12 21z"/></svg></div>
         <b>Das volle Spektrum</b>
         <p>KG, MT, MLD, Kinderbobath, CMD, Stoßwelle, Elektrotherapie, Kinesiotaping, Schröpfen, Dorn. Du bleibst fachlich in Bewegung.</p>
-      </div>
-      <div class="benefit reveal">
-        <div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.6-5.3A2 2 0 0 0 15.5 10h-7a2 2 0 0 0-1.9 1.7z"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/><path d="M3 13h1M20 13h1"/></svg></div>
-        <b>Geschäftswagen möglich</b>
-        <p>Für die Hausbesuche lässt sich ein Geschäftswagen einrichten – sprich uns im Gespräch einfach darauf an.</p>
       </div>
       <div class="benefit reveal">
         <div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
@@ -635,7 +643,7 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
           <div class="fstep" data-step="4">
             <span class="reqtag reqtag--opt"><i></i>Wünschenswert</span>
             <h3>Hausbesuche – wärst du dabei?</h3>
-            <p class="hint">Pflegeheime in der Region gehören dazu – nach Absprache. Geschäftswagen möglich.</p>
+            <p class="hint">Pflegeheime in der Region gehören dazu – nach Absprache. Dienstwagen stellen wir.</p>
             <div class="choice-grid" data-field="hausbesuche" data-type="single">
               <label class="choice"><input type="radio" name="hausbesuche" value="Führerschein vorhanden, Hausbesuche gerne" data-ok="1" /><span class="key">A</span><span>Ja, gerne – Führerschein Klasse B vorhanden</span></label>
               <label class="choice"><input type="radio" name="hausbesuche" value="Führerschein vorhanden, Hausbesuche nach Absprache" data-ok="1" /><span class="key">B</span><span>Nach Absprache – Führerschein vorhanden</span></label>

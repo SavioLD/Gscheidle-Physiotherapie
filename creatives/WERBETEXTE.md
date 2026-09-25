@@ -19,7 +19,7 @@ dazwischenfunkt.
 > ✔ Montag bis Freitag, 07:00–19:00 Uhr – keine Wochenenddienste
 > ✔ Voll- oder Teilzeit, 20 bis 40 Stunden, unbefristet
 > ✔ Fortbildungen wie MT, MLD oder Bobath nach Absprache bezahlt
-> ✔ Geschäftswagen für die Hausbesuche möglich
+> ✔ Dienstwagen – auch zur privaten Nutzung
 >
 > Bewerben dauert unter 60 Sekunden: vier Fragen beantworten, Kontaktdaten hinterlassen, fertig. Kein Anschreiben, kein Lebenslauf.
 
