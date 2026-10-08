@@ -143,12 +143,12 @@ und `assets/logo-weiss.png` (weiße Wortmarke für dunkle Flächen).
 
 ## Live schalten (GitHub Pages)
 
-Pages laeuft auf **Deploy from a branch**: `main` / `/root`. Jeder Push auf
-`main` wird dadurch automatisch veroeffentlicht, ohne eigenen Workflow. Die
-Datei `.nojekyll` sorgt dafuer, dass alles 1:1 ausgeliefert wird.
+Pages laeuft in diesem Repo auf der Quelle **GitHub Actions**. Veroeffentlicht
+wird ueber `.github/workflows/pages.yml` bei jedem Push auf `main`; `.nojekyll`
+sorgt dafuer, dass alles 1:1 ausgeliefert wird.
 
-Ein eigener Actions-Workflow lag hier kurzzeitig daneben – `deploy-pages`
-setzt aber die Quelle **GitHub Actions** voraus. Mit Branch-Quelle liefen
-zwei Pipelines gegen dieselbe Pages-Umgebung und beide scheiterten. Also:
-entweder Branch-Quelle ohne Workflow (so wie jetzt) oder Quelle auf
-*GitHub Actions* umstellen und den Workflow zurueckholen - nicht beides.
+Die eingebaute Branch-Pipeline (`pages build and deployment`) taucht in der
+Actions-Liste zwar auf, stellt sich aber tot: `build` laeuft nicht, `deploy`
+wird uebersprungen. Das ist in dieser Quelle normal und **kein** Fehler - nicht
+davon irritieren lassen und den Workflow nicht entfernen, sonst wird gar nichts
+mehr veroeffentlicht.
