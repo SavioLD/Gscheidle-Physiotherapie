@@ -255,6 +255,18 @@ section{padding:88px 0}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(89,195,183,.28)}
 .field textarea{min-height:76px;resize:vertical}
 .field input.is-invalid{border-color:#C0392B}
+.upload__opt{color:var(--ink-mute);font-weight:500}
+.upload.has-file .upload__opt{display:none}
+.upload{display:flex;align-items:center;gap:10px;padding:11px 13px;border:1.6px dashed var(--line-strong);border-radius:11px;cursor:pointer;background:var(--bg-soft);font-size:14px;color:var(--ink-soft);transition:border-color .16s ease,background .16s ease}
+.upload:hover,.upload.is-drag{border-color:var(--brand);background:var(--brand-soft)}
+.upload svg{width:19px;height:19px;stroke:var(--brand);flex:0 0 auto}
+.upload__txt{flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.upload input[type=file]{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.upload.has-file{border-style:solid;border-color:var(--brand);background:var(--brand-soft);color:var(--brand-800);font-weight:600}
+.upload__x{border:none;background:none;cursor:pointer;font-size:20px;line-height:1;color:var(--ink-mute);padding:0 2px;flex:0 0 auto}
+.upload__x:hover{color:#9A2B1E}
+.upload__err{display:none;margin-top:5px;font-size:12.5px;color:#9A2B1E}
+.upload__err.is-visible{display:block}
 .consent{font-size:12.5px;color:var(--ink-mute);line-height:1.45;margin-top:6px}
 .consent a{color:var(--brand);text-decoration:underline}
 .form-error{display:none;margin-top:12px;padding:12px 14px;border-radius:11px;background:#FDECEA;color:#9A2B1E;font-size:14px}
@@ -364,15 +376,19 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
   .choice-grid{gap:7px}
   .fstep .hint{font-size:13px;margin-bottom:10px}
   .field input,.field select{padding:10px 12px;font-size:16px}
-  .field{margin-bottom:8px}
+  .field{margin-bottom:4px;gap:3px}
+  .form-card__head{padding:12px 14px 0}
+  .progress__label{margin-top:5px;font-size:11.5px}
+  .form-card__body{padding:14px 14px 16px}
+  .fnav{margin-top:12px;padding-top:12px}
+  .field label{font-size:11.5px;line-height:1.15}
+  .upload{padding:9px 11px;font-size:13.5px}
+  .upload svg{width:17px;height:17px}
+  .consent{font-size:10.5px;line-height:1.3}
+  .fstep h3{font-size:17px}
   .choice-grid--2col{gap:7px}
   .choice--multi{padding:10px 10px;gap:8px;font-size:14px}
-  .field{margin-bottom:6px;gap:3px}
-  .field label{font-size:12px;line-height:1.2}
-  .consent{font-size:11px;line-height:1.35;margin-top:2px}
-  .fstep h3{font-size:18px}
-  .form-card__body{padding:16px 14px 20px}
-  .form-card__head{padding:14px 14px 0}
+  .consent{margin-top:2px}
 }
 </style>
 </head>
@@ -680,6 +696,15 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
                 </select>
               </div>
             </div>
+            <div class="field">
+              <label class="upload" id="uploadBox" for="anhang">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></svg>
+                <span class="upload__txt" id="uploadTxt">Lebenslauf anhängen <span class="upload__opt">optional</span></span>
+                <button type="button" class="upload__x" id="uploadClear" hidden aria-label="Dateien entfernen">×</button>
+                <input id="anhang" name="anhang" type="file" aria-label="Lebenslauf und Zeugnisse anhängen, optional" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.webp,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/jpeg,image/png,image/webp" />
+              </label>
+              <p class="upload__err" id="uploadErr"></p>
+            </div>
             <p class="consent">
               Mit dem Absenden stimme ich der Verarbeitung meiner Angaben zur Bearbeitung der Bewerbung zu
               (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO) ·
@@ -725,7 +750,7 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
       <h2 class="sec-title" style="margin:0 auto">Kurz &amp; knapp beantwortet</h2>
     </div>
     <div class="faq">
-      <details><summary>Brauche ich einen Lebenslauf?</summary><div class="faq__a">Nein. Für die Bewerbung reichen die vier Fragen und deine Kontaktdaten. Alles Weitere besprechen wir im persönlichen Gespräch – Zeugnisse bringst du einfach zum Kennenlernen mit.</div></details>
+      <details><summary>Brauche ich einen Lebenslauf?</summary><div class="faq__a">Nein. Für die Bewerbung reichen die vier Fragen und deine Kontaktdaten. Wenn du magst, kannst du im letzten Schritt Lebenslauf und Zeugnisse anhängen (PDF, Word oder Foto) – Pflicht ist das nicht.</div></details>
       <details><summary>Geht die Stelle auch in Teilzeit?</summary><div class="faq__a">Ja. Von rund 20 bis 40 Stunden ist alles möglich. Sag uns im Formular, was du dir vorstellst – wir richten das Pensum nach deiner Situation ein.</div></details>
       <details><summary>Ich habe im Ausland studiert. Kann ich mich bewerben?</summary><div class="faq__a">Ja, sofern deine Anerkennung als Physiotherapeut:in in Deutschland vorliegt oder beantragt ist. Wähle im Formular einfach die passende Antwort aus – wir klären den Rest im Gespräch.</div></details>
       <details><summary>Brauche ich Zusatzqualifikationen wie MT oder MLD?</summary><div class="faq__a">Nein, Pflicht ist das nicht. Wenn du sie hast, umso besser. Wenn nicht, übernehmen wir die Kosten einer passenden Fortbildung nach Absprache.</div></details>
@@ -786,6 +811,10 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
      Formular erscheint ein Hinweis.
      ===================================================================== */
   var WEB3FORMS_KEY = "fc774f2d-144f-4a55-9510-f4a073cf5dd4";   /* Access Key von web3forms.com */
+  var UPLOAD_MAX_MB = 5;                                        /* Gesamtgroesse aller Anhaenge */
+  var UPLOAD_TYPES  = ["application/pdf","application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "image/jpeg","image/png","image/webp"];
   var WEBHOOK_URL   = "";   /* optional: LeadTable Generic Webhook */
 
   var STELLE   = "Physiotherapeut:in (m/w/d)";
@@ -938,6 +967,49 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
     }
   });
 
+  /* ---------- Anhaenge ---------- */
+  var fileInput = document.getElementById("anhang"),
+      uploadBox = document.getElementById("uploadBox"),
+      uploadTxt = document.getElementById("uploadTxt"),
+      uploadClear = document.getElementById("uploadClear"),
+      uploadErr = document.getElementById("uploadErr"),
+      uploadLeer = uploadTxt.textContent,
+      dateien = [];
+
+  function uploadFehler(m){ uploadErr.textContent = m || ""; uploadErr.classList.toggle("is-visible", !!m); }
+  function mb(b){ return (b / 1024 / 1024).toFixed(1).replace(".", ","); }
+
+  function dateienUebernehmen(liste){
+    uploadFehler("");
+    var gewaehlt = Array.prototype.slice.call(liste || []);
+    if (!gewaehlt.length) return;
+    var falsch = gewaehlt.filter(function(f){ return UPLOAD_TYPES.indexOf(f.type) === -1; });
+    if (falsch.length){ uploadFehler("Bitte nur PDF, Word oder Fotos (JPG/PNG)."); return; }
+    var summe = gewaehlt.reduce(function(a, f){ return a + f.size; }, 0);
+    if (summe > UPLOAD_MAX_MB * 1024 * 1024){
+      uploadFehler("Zusammen " + mb(summe) + " MB – mehr als " + UPLOAD_MAX_MB + " MB gehen leider nicht.");
+      return;
+    }
+    dateien = gewaehlt;
+    uploadBox.classList.add("has-file");
+    uploadTxt.textContent = dateien.length === 1
+      ? dateien[0].name + " (" + mb(dateien[0].size) + " MB)"
+      : dateien.length + " Dateien (" + mb(summe) + " MB)";
+    uploadClear.hidden = false;
+  }
+  function dateienLeeren(){
+    dateien = []; fileInput.value = "";
+    uploadBox.classList.remove("has-file");
+    uploadTxt.textContent = uploadLeer;
+    uploadClear.hidden = true;
+    uploadFehler("");
+  }
+  fileInput.addEventListener("change", function(){ dateienUebernehmen(fileInput.files); });
+  uploadClear.addEventListener("click", function(ev){ ev.preventDefault(); ev.stopPropagation(); dateienLeeren(); });
+  ["dragover","dragenter"].forEach(function(t){ uploadBox.addEventListener(t, function(ev){ ev.preventDefault(); uploadBox.classList.add("is-drag"); }); });
+  ["dragleave","drop"].forEach(function(t){ uploadBox.addEventListener(t, function(ev){ ev.preventDefault(); uploadBox.classList.remove("is-drag"); }); });
+  uploadBox.addEventListener("drop", function(ev){ if (ev.dataTransfer && ev.dataTransfer.files) dateienUebernehmen(ev.dataTransfer.files); });
+
   /* ---------- Payload ---------- */
   function heute(){
     var d = new Date();
@@ -1023,9 +1095,10 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
   }
 
   /* E-Mail an die Praxis ueber web3forms. Die Feldnamen sind bewusst
-     ausgeschrieben – web3forms baut daraus die Tabelle in der Mail. */
-  function sendeMail(d){
-    var mail = {
+     ausgeschrieben – web3forms baut daraus die Tabelle in der Mail.
+     Liegen Anhaenge vor, geht alles als FormData raus, sonst als JSON. */
+  function mailFelder(d){
+    return {
       access_key: WEB3FORMS_KEY,
       subject: "Bewerbung " + STELLE + " – " + d.vorname + " " + d.nachname,
       from_name: "Karriereseite Praxis Gscheidle",
@@ -1048,16 +1121,41 @@ footer{background:var(--brand-900);color:rgba(255,255,255,.76);padding:56px 0 26
       "Einwilligung": d.datenschutz,
       "Quelle": d.quelle
     };
+  }
+
+  function web3forms(body, json){
     return fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify(mail)
+      headers: json ? { "Content-Type": "application/json", "Accept": "application/json" }
+                    : { "Accept": "application/json" },
+      body: body
     }).then(function(res){
       if (!res.ok) throw new Error("HTTP " + res.status);
       return res.json();
     }).then(function(out){
       if (!out || out.success !== true) throw new Error("web3forms: " + (out && out.message));
       return out;
+    });
+  }
+
+  function sendeMail(d){
+    var felder = mailFelder(d);
+
+    if (!dateien.length) return web3forms(JSON.stringify(felder), true);
+
+    var fd = new FormData();
+    Object.keys(felder).forEach(function(k){ fd.append(k, felder[k]); });
+    fd.append("Anhänge", dateien.length + " Datei(en) im Anhang");
+    dateien.forEach(function(f, i){ fd.append("anhang_" + (i + 1), f, f.name); });
+
+    /* Klappt der Upload nicht – etwa weil der Tarif keine Dateien erlaubt –
+       geht die Bewerbung trotzdem raus, mit Hinweis statt Anhang. */
+    return web3forms(fd, false).catch(function(err){
+      if (window.console) console.warn("[Bewerbungsformular] Anhang nicht uebertragen:", err);
+      var ohne = mailFelder(d);
+      ohne["Anhänge"] = dateien.length + " Datei(en) angeboten – Upload fehlgeschlagen, bitte beim Bewerber anfordern ("
+        + dateien.map(function(f){ return f.name; }).join(", ") + ")";
+      return web3forms(JSON.stringify(ohne), true);
     });
   }
 

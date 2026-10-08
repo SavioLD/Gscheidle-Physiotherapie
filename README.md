@@ -84,6 +84,27 @@ Sammelfeld `nicht_erfuellt`.
 Alle Fragen sind rein berufsbezogen. Es wird nicht nach Alter, Herkunft, Gesundheit,
 Religion oder Familienstand gefragt (AGG).
 
+## Anhänge
+
+Im Kontaktschritt kann der Bewerber **optional** Lebenslauf, Zeugnisse und
+Ähnliches anhängen – mehrere Dateien auf einmal, PDF, Word oder Foto,
+zusammen höchstens 5 MB. Typ und Größe werden vorab im Browser geprüft.
+
+Liegen Anhänge vor, geht die Bewerbung als `multipart/form-data` an Web3Forms
+und die Dateien hängen an der Mail. Ohne Anhang bleibt es beim schlanken
+JSON-Versand.
+
+**Wichtig:** Datei-Uploads sind bei Web3Forms an den Tarif gebunden. Lässt der
+Tarif sie nicht zu, scheitert der Versand mit Anhang – die Bewerbung geht dann
+automatisch ein zweites Mal ohne Datei raus, mit dem Feld
+
+> *Anhänge: 1 Datei(en) angeboten – Upload fehlgeschlagen, bitte beim Bewerber
+> anfordern (lebenslauf.pdf)*
+
+So geht kein Bewerber verloren, und die Praxis weiß, dass sie die Unterlagen
+nachfordern muss. Ob der Upload im aktuellen Tarif funktioniert, zeigt die
+erste echte Testbewerbung.
+
 ## Was übertragen wird
 
 Nur abgeschlossene, qualifizierte Bewerbungen. In der E-Mail stehen die Felder
@@ -99,6 +120,7 @@ ausgeschrieben, an LeadTable gehen dieselben Daten als JSON:
 | Optionale Kriterien | `optionale_kriterien` | z. B. `1 von 2 erfüllt` |
 | Davon offen | `nicht_erfuellt` | Klartextliste, sonst `–` |
 | Bewertung | `match` | `Top-Match` / `Guter Match` / `Grundprofil erfüllt` |
+| Anhänge | – | nur bei Dateiversand bzw. als Hinweis, wenn der Upload scheiterte |
 | Eingegangen am, Einwilligung, Quelle | `datum`, `datenschutz`, `quelle`, `seite` | Metadaten |
 
 ## Mobile Laufruhe
