@@ -151,15 +151,23 @@ const MOTIVE = [
     name:'dienstwagen', theme:'t-mint',
     eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
     h1:'Dienstwagen. <em>Auch privat.</em>',
-    sub:'Für die Hausbesuche stellen wir dir einen Wagen – und der bleibt auch nach Feierabend deiner. Nicht nur für Termine.',
+    sub:'Den Wagen für die Hausbesuche stellen wir – ohne Eigenanteil, ohne Gehaltsumwandlung. Nach Feierabend fährst du ihn genauso.',
     ticks:['Voll- oder Teilzeit, unbefristet','Keine Wochenenddienste']
   },
   {
-    name:'einarbeitung', theme:'t-light',
+    name:'dienstwagen-null', theme:'t-dark',
     eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
-    h1:'Stoßwelle? <em>Zeigen wir dir.</em>',
-    sub:'Was du noch nicht kannst, lernst du bei uns – an echten Patienten, nicht im Seminarraum. Mitbringen musst du es nicht.',
-    ticks:['Zusatzqualifikationen willkommen, aber kein Muss','Fortbildungen zahlen wir nach Absprache']
+    bignum:'0 €',
+    h1:'für deinen <em>Dienstwagen</em>.',
+    sub:'Wir stellen ihn für die Hausbesuche – und du fährst ihn auch privat. Kein Eigenanteil, keine Gehaltsumwandlung.',
+    ticks:['Voll- oder Teilzeit, unbefristet','Mo–Fr, keine Wochenenddienste']
+  },
+  {
+    name:'dienstwagen-privat', theme:'t-light',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
+    h1:'Auch sonntags <em>dein Auto</em>.',
+    sub:'Den Dienstwagen für die Hausbesuche stellen wir dir. Was du am Wochenende damit machst, ist deine Sache.',
+    ticks:['Gestellt von uns, kein Eigenanteil','Unbefristet, Voll- oder Teilzeit']
   },
   {
     name:'wochenende', theme:'t-dark', photo:'behandlungsraum.jpg',
@@ -180,13 +188,13 @@ const MOTIVE = [
     eyebrow:'Wir stellen ein · Rottweil',
     bignum:'7',
     h1:'Kolleg:innen. <em>Eine:r fehlt noch.</em>',
-    sub:'5 Therapeut:innen zum Fachsimpeln und zwei Kolleginnen an der Rezeption, die dir Termine und Papierkram abnehmen.'
+    sub:'5 Therapeut:innen zum Fachsimpeln und zwei Kolleginnen an der Rezeption.'
   },
   {
     name:'zeit-pro-patient', theme:'t-light',
     eyebrow:'Physiotherapeut:in (m/w/d)',
     h1:'Wie viel Zeit bleibt dir <em>pro Patient</em>?',
-    sub:'Eine Frage, die in Vorstellungsgesprächen zu selten gestellt wird. Bei uns darfst du sie stellen – und bekommst eine ehrliche Antwort, bevor du unterschreibst.',
+    sub:'Eine Frage, die zu selten gestellt wird. Bei uns bekommst du eine ehrliche Antwort – bevor du unterschreibst.',
     ticks:['Befund und Therapieplan liegen bei dir','Kurze Absprachen im Team statt langer Dienstwege']
   },
   {
@@ -194,13 +202,13 @@ const MOTIVE = [
     eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
     h1:'Kein Tag wie <em>der davor</em>.',
     terms:['Krankengymnastik','Manuelle Therapie','Lymphdrainage','Kinderbobath','CMD','Stoßwelle','Elektrotherapie','Kinesiotaping'],
-    sub:'Das ganze Spektrum statt Behandlung von der Stange. Was dir noch fehlt, bilden wir dir fort.'
+    sub:'Das ganze Spektrum statt Behandlung von der Stange.'
   },
   {
     name:'rezeption', theme:'t-mint',
     eyebrow:'Wir stellen ein · Rottweil',
     h1:'Termine macht die Rezeption. <em>Du machst Therapie.</em>',
-    sub:'Zwei Kolleginnen am Empfang nehmen dir Terminplanung und Papierkram ab. Damit du das machst, wofür du ausgebildet bist.',
+    sub:'Zwei Kolleginnen am Empfang nehmen dir Terminplanung und Papierkram ab.',
     ticks:['Voll- oder Teilzeit, unbefristet','Keine Wochenenddienste']
   },
   {

@@ -1,54 +1,58 @@
 # Anzeigentexte · Physiotherapeut:in (m/w/d) · Praxis Gscheidle, Rottweil
 
-Ein Textsatz für alle Motive – nicht pro Bild ein eigener Text. Die neun Motive
-in [`png/`](png) sind reine Bildvarianten desselben Angebots; so lässt sich
-sauber messen, welches Motiv zieht, ohne dass der Text als zweite Variable
-dazwischenfunkt.
+**Drei Primärtexte, eine Überschrift, eine Beschreibung.** Überschrift und
+Beschreibung bleiben über alle Anzeigen gleich – so misst du sauber, welcher
+Primärtext und welches Motiv ziehen, ohne dass drei Variablen gleichzeitig
+wackeln.
 
 **Link für alle Anzeigen:** `https://saviold.github.io/Gscheidle-Physiotherapie/`
 **CTA-Button:** „Jetzt bewerben"
 
 ---
 
-## Primary Text
+## Primärtext 1 · Dienstwagen zuerst
 
-> Du behandelst gerne – aber nicht im 20-Minuten-Takt zwischen Tür und Angel?
+> 🚗 Dienstwagen inklusive – und zwar auch für privat.
 >
-> Die Physiotherapiepraxis Gscheidle in Rottweil sucht eine:n Physiotherapeut:in (m/w/d) in Voll- oder Teilzeit. 7 Kolleg:innen, das volle Behandlungsspektrum von Krankengymnastik über Manuelle Therapie und Lymphdrainage bis Kinderbobath, und zwei Kolleginnen an der Rezeption, die dir Termine und Papierkram abnehmen.
+> Die Physiotherapiepraxis Gscheidle in Rottweil sucht eine:n Physiotherapeut:in (m/w/d). Den Wagen für die Hausbesuche stellen wir dir. Ohne Eigenanteil, ohne Gehaltsumwandlung – und nach Feierabend fährst du ihn genauso.
 >
-> ✔ Montag bis Freitag, 07:00–19:00 Uhr – keine Wochenenddienste
-> ✔ Voll- oder Teilzeit, 20 bis 40 Stunden, unbefristet
-> ✔ Fortbildungen wie MT, MLD oder Bobath nach Absprache bezahlt
-> ✔ Dienstwagen – auch zur privaten Nutzung
+> ✅ Voll- oder Teilzeit, unbefristet
+> ✅ Mo–Fr, 07:00–19:00 Uhr – keine Wochenenddienste
+> ✅ Fortbildungen nach Absprache bezahlt
 >
-> Bewerben dauert unter 60 Sekunden: vier Fragen beantworten, Kontaktdaten hinterlassen, fertig. Kein Anschreiben, kein Lebenslauf.
+> Bewerben dauert unter 60 Sekunden: vier Fragen, Kontaktdaten, fertig. Kein Anschreiben, kein Lebenslauf.
 
-### Kurzvariante (für Stories und Reels)
+## Primärtext 2 · Team und Praxis
 
-> Physiotherapeut:in (m/w/d) in Rottweil gesucht. Voll- oder Teilzeit, unbefristet, keine Wochenenddienste. Fortbildungen nach Absprache bezahlt. Bewerben in unter 60 Sekunden – ohne Anschreiben, ohne Lebenslauf.
+> Sieben Kolleg:innen. Eine:r fehlt noch. 👋
+>
+> Wir sind seit 1998 in Rottweil: fünf Therapeut:innen und zwei Kolleginnen an der Rezeption, die dir Termine und Papierkram abnehmen. Du machst Therapie – das volle Spektrum von Krankengymnastik über Manuelle Therapie bis Lymphdrainage.
+>
+> 🚗 Dienstwagen, den wir stellen – auch zur privaten Nutzung
+> 🗓️ Montag bis Freitag, keine Wochenenddienste
+> 💶 Faire, pünktliche Vergütung, unbefristet
+>
+> Vier Fragen, dann sind wir im Gespräch. Ohne Anschreiben, ohne Lebenslauf.
+
+## Primärtext 3 · Der wunde Punkt
+
+> Wie viel Zeit bleibt dir eigentlich pro Patient? 🤔
+>
+> Bei uns darfst du die Frage stellen – und bekommst eine ehrliche Antwort, bevor du unterschreibst. Befund und Therapieplan liegen bei dir, kurze Absprachen im Team statt langer Dienstwege.
+>
+> Dazu einen 🚗 Dienstwagen, den wir stellen und den du auch privat fährst, ⏰ Mo–Fr von 07:00 bis 19:00 Uhr ohne Wochenenddienste und 📚 Fortbildungen, die wir nach Absprache zahlen.
+>
+> Physiotherapeut:in (m/w/d) in Rottweil, Voll- oder Teilzeit, unbefristet. Bewerben in unter 60 Sekunden – ohne Lebenslauf.
 
 ---
 
-## Headline
+## Überschrift
 
-> Physiotherapeut:in (m/w/d) in Rottweil
+> Dienstwagen inklusive – auch privat
 
-**Alternativen zum Testen**
+## Beschreibung
 
-- Ohne Wochenenddienste. Fortbildung wird bezahlt.
-- 7 Kolleg:innen – eine:r fehlt noch
-- Bewerben in 60 Sekunden, ohne Lebenslauf
-
----
-
-## Description
-
-> Voll- oder Teilzeit, unbefristet. Bewerben ohne Lebenslauf.
-
-**Alternativen zum Testen**
-
-- Praxis Gscheidle · seit 1998 in Rottweil
-- Mo–Fr, 07–19 Uhr · Fortbildung nach Absprache bezahlt
+> Voll- oder Teilzeit · Bewerben ohne Lebenslauf
 
 ---
 
@@ -67,28 +71,30 @@ dazwischenfunkt.
 
 **Tracking:** Auf der Seite liegt kein Meta-Pixel. Ohne Pixel kann Meta nicht auf
 Bewerbungen optimieren – dann auf *Landingpage-Aufrufe* optimieren und die echten
-Bewerbungen in LeadTable gegenzählen. Sobald die Pixel-ID vorliegt, kommt sie samt
-Event beim Absenden rein; danach kann die Kampagne auf Conversions laufen.
+Bewerbungen in der Praxis-Mailbox gegenzählen. Sobald die Pixel-ID vorliegt, kommt
+sie samt Event beim Absenden rein; danach kann die Kampagne auf Conversions laufen.
 
 ### Struktur
 
-Neun Motive stehen bereit, geschaltet werden aber nur vier gleichzeitig –
-sonst zersplittert das Budget und keins bekommt genug Daten.
+Elf Motive stehen bereit, geschaltet werden aber nur vier gleichzeitig – sonst
+zersplittert das Budget und keins bekommt genug Daten. Die drei Primärtexte
+rotieren über dieselben vier Anzeigen.
 
 ```
 Kampagne: Recruiting Physiotherapeut:in Rottweil
 └── Anzeigengruppe: Rottweil 35 km
-    ├── Anzeige 1: dienstwagen       (härtester Vorteil, auch privat nutzbar)
-    ├── Anzeige 2: wochenende        (stärkstes Differenzierungsargument)
-    ├── Anzeige 3: fortbildung       (spricht Qualifizierte an)
-    └── Anzeige 4: zeit-pro-patient  (trifft den wundesten Punkt)
+    ├── Anzeige 1: dienstwagen-null   (0 € – härtester Aufhänger)
+    ├── Anzeige 2: dienstwagen        (dasselbe Argument, türkis statt dunkel)
+    ├── Anzeige 3: wochenende         (Praxisfoto, keine Wochenenddienste)
+    └── Anzeige 4: zeit-pro-patient   (trifft den wundesten Punkt)
 Retargeting (ab ~300 Seitenaufrufen):
 └── Anzeigengruppe: Website-Besucher 30 Tage, ohne Absender
     └── Anzeige: ohne-lebenslauf
 ```
 
 **Nachrücker für Welle 2**, wenn nach 5–7 Tagen die schwächsten zwei
-abgeschaltet werden: `sieben`, `rezeption`, `spektrum`, `seit-1998`.
+abgeschaltet werden: `dienstwagen-privat`, `sieben`, `rezeption`, `fortbildung`,
+`spektrum`, `seit-1998`.
 
 Nicht früher eingreifen – Meta braucht die ersten Tage zum Einpendeln.
 
@@ -99,10 +105,20 @@ Nicht früher eingreifen – Meta braucht die ersten Tage zum Einpendeln.
 Die Anzeigen nennen die beiden Pflichtkriterien bewusst nicht offensiv – das
 würde die Reichweite unnötig drücken. Gefiltert wird im Formular: Wer keine
 abgeschlossene Ausbildung als Physiotherapeut:in hat oder Deutsch unter B2
-spricht, wird freundlich abgelehnt und gar nicht erst als Lead übertragen. In
-LeadTable landen also nur Bewerbungen, die die Pflichtkriterien erfüllen –
-zusätzlich mit `match`-Bewertung und der Liste der offenen optionalen Punkte.
+spricht, wird freundlich abgelehnt und gar nicht erst übertragen. In der
+Praxis-Mailbox landen also nur Bewerbungen, die die Pflichtkriterien erfüllen –
+zusätzlich mit Bewertung und der Liste der offenen optionalen Punkte.
 
 Was den Text trotzdem vorfiltert: Er spricht durchgehend fachlich („Manuelle
-Therapie", „Lymphdrainage", „Bobath", „Behandlungsspektrum"). Wer damit nichts
-anfangen kann, klickt gar nicht erst.
+Therapie", „Lymphdrainage", „Befund", „Therapieplan"). Wer damit nichts anfangen
+kann, klickt gar nicht erst.
+
+## Zum Wort „kostenlos"
+
+In den Texten steht bewusst **„ohne Eigenanteil, ohne Gehaltsumwandlung"** und
+nicht „kostenlos" oder „steuerfrei". Die private Nutzung eines Dienstwagens ist
+in Deutschland ein geldwerter Vorteil und wird versteuert – daran ändert die
+Anzeige nichts. Die Formulierung sagt also genau das, was stimmt: Die Praxis
+stellt den Wagen, der Bewerber zahlt nichts dafür und bekommt auch nichts vom
+Gehalt abgezogen. Das ist stark genug und hält jeder Nachfrage im
+Vorstellungsgespräch stand.
