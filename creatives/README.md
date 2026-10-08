@@ -51,13 +51,18 @@ Dienstwagen, weil er das stärkste Argument der Praxis ist (Vorschlag in
 
 | Beitrag | Überschrift | Fläche |
 |---|---|---|
-| `marke-befund` | „Ein Befund ist kein Formular." – wie hier gearbeitet wird | **Praxisfoto** |
-| `marke-1998` | „Dieselbe Straße. Seit 1998." – Beständigkeit und Ort | Türkis |
-| `marke-fortbildung` | „Was eine:r lernt, können bald alle." – Haltung zur Weiterbildung | helle Fläche |
+| `marke-rezeption` | „Den Papierkram machen zwei Kolleginnen." – Entlastung | **Praxisfoto** |
+| `marke-unabhaengig` | „Keine Kette. Keine Zentrale." – kurze Entscheidungswege | Türkis |
+| `marke-fortbildung` | „Was eine:r lernt, können bald alle." – Weiterentwicklung | helle Fläche |
 
 Diese drei tragen das Feld `brand:true`. Damit fällt der „Jetzt bewerben"-Knopf
-weg und im Fuß steht nur die Praxis – es sind Beiträge, keine Anzeigen. Die
-Texte dazu stehen in [`INSTAGRAM.md`](INSTAGRAM.md).
+weg und im Fuß steht nur die Praxis – es sind Beiträge, keine Anzeigen.
+
+Alle drei beantworten dieselbe Frage: **wie ist es, hier zu arbeiten?** Das ist
+der Unterschied zu Praxismarketing – ein Beitrag über gute Befunde oder lange
+Tradition spricht Patienten an, diese sprechen Kolleg:innen an. Deshalb
+durchgängig die Kopfzeile „Arbeiten bei uns". Die Texte stehen in
+[`INSTAGRAM.md`](INSTAGRAM.md).
 
 ## Neu rendern
 

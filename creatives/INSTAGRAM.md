@@ -1,56 +1,60 @@
 # Instagram · Arbeitgebermarke
 
-Drei organische Beiträge, die **keine Stelle ausschreiben**. Sie erzählen, wie
-die Praxis arbeitet, wie lange es sie gibt und was sie von Fortbildung hält.
-Wer sich davon angesprochen fühlt, merkt sich die Praxis – bewerben kann er
-sich später über die Anzeigen.
+Drei organische Beiträge, die **keine Stelle ausschreiben**. Sie beantworten
+eine einzige Frage: *Wie ist es, in dieser Praxis zu arbeiten?*
 
-Deshalb tragen diese Motive **keinen „Jetzt bewerben"-Knopf** und nennen die
-Stelle an keiner Stelle. Im Fuß steht nur die Praxis.
+Das ist der Unterschied zu normalem Praxismarketing. Ein Beitrag über gute
+Befunde oder lange Tradition spricht Patienten an. Diese drei sprechen
+Kolleg:innen an – über Entlastung, über Entscheidungswege, über
+Weiterentwicklung. Wer sich davon angesprochen fühlt, merkt sich die Praxis;
+bewerben kann er sich später über die Anzeigen.
+
+Deshalb tragen alle drei die Kopfzeile **„Arbeiten bei uns"**, keinen
+„Jetzt bewerben"-Knopf und nennen die Stelle an keiner Stelle.
 
 **Dateien** (je 4:5, 1:1 und 9:16 in [`png/`](png)):
-`marke-befund`, `marke-1998`, `marke-fortbildung`
+`marke-rezeption`, `marke-unabhaengig`, `marke-fortbildung`
 
 Für den Feed 4:5 nehmen (bekommt am meisten Fläche), 1:1 wenn das Raster
 einheitlich bleiben soll, 9:16 für die Story-Zweitverwertung.
 
 ---
 
-## 1 · „Ein Befund ist kein Formular."
+## 1 · „Den Papierkram machen zwei Kolleginnen."
 
-**Datei:** `marke-befund-45.png` · **Fläche:** Praxisfoto
+**Datei:** `marke-rezeption-45.png` · **Fläche:** Praxisfoto
 
-> Ein Befund ist kein Formular. 📋
+> Den Papierkram machen zwei Kolleginnen. 📞
 >
-> Bevor bei uns die erste Übung kommt, wird erst einmal geschaut, zugehört und angefasst. Woher kommt der Schmerz wirklich? Was macht der Alltag mit dem Rücken? Welche Bewegung geht noch, welche nicht mehr?
+> Termine vergeben, Telefon, Rezepte prüfen, Folgeverordnungen hinterher sein: In vielen Praxen macht das der oder die Therapeut:in zwischen zwei Behandlungen.
 >
-> Das dauert. Und genau dafür ist die Zeit da.
+> Bei uns nicht. Dafür sitzen zwei Kolleginnen am Empfang – von 7 bis 19 Uhr.
 >
-> Weil eine Therapie nur so gut sein kann wie das, was am Anfang steht.
+> Damit die, die therapieren, auch wirklich therapieren können. 🤍
 >
-> #physiotherapie #rottweil #manuelletherapie #krankengymnastik #befund #physiopraxis #gesundheit #rückenschmerzen #praxisgscheidle
+> #physiotherapie #rottweil #arbeitenbeiuns #praxisteam #physiojob #teamarbeit #praxisgscheidle #gesundheitsberufe
 
-**Wann posten:** gut als erster Beitrag der Reihe – er sagt am klarsten, wofür
-die Praxis steht.
+**Warum das zieht:** Der Verwaltungskram ist der meistgenannte Frustpunkt im
+Beruf. Wer ihn abnimmt, sagt mehr über sich als jede Floskel über „tolles Team".
 
 ---
 
-## 2 · „Dieselbe Straße. Seit 1998."
+## 2 · „Keine Kette. Keine Zentrale."
 
-**Datei:** `marke-1998-45.png` · **Fläche:** Türkis
+**Datei:** `marke-unabhaengig-45.png` · **Fläche:** Türkis
 
-> Dieselbe Straße. Seit 1998. 📍
+> Keine Kette. Keine Zentrale. 📍
 >
-> Königstraße 28, mitten in Rottweil. Sieben Kolleg:innen, fünf davon auf der Behandlungsliege, zwei am Empfang. Dazu Hausbesuche und die Pflegeheime in der Region.
+> Eine Praxis, sieben Kolleg:innen, seit 1998 in der Königstraße 28.
 >
-> In den Jahren hat sich einiges verändert: die Geräte, die Verfahren, die Fortbildungen. Die Adresse nicht.
+> Das heißt: Wenn etwas nicht läuft, wird es hier besprochen und hier entschieden. Kein Ticket an einen Hauptsitz, keine Vorgabe aus einer Region, die niemand kennt.
 >
-> Manches muss man nicht neu erfinden. 🤍
+> Kleine Praxis, kurze Wege. Manchmal ist das genau der Punkt. 🤍
 >
-> #rottweil #physiotherapie #königstraße #seit1998 #lokal #physiopraxis #teamrottweil #praxisgscheidle #lymphdrainage
+> #physiotherapie #rottweil #arbeitenbeiuns #inhabergeführt #kleineunternehmen #physiojob #praxisgscheidle #königstraße
 
-**Wann posten:** trägt gut im Lokalen und wird von Bestandspatienten geteilt.
-Funktioniert auch als Jahresrückblick oder zum Praxisgeburtstag im April.
+**Warum das zieht:** Immer mehr Praxen gehören zu Ketten. Unabhängigkeit ist für
+viele Therapeut:innen ein echtes Argument – man muss sie nur benennen.
 
 ---
 
@@ -60,16 +64,16 @@ Funktioniert auch als Jahresrückblick oder zum Praxisgeburtstag im April.
 
 > Was eine:r lernt, können bald alle. 📚
 >
-> Eine Fortbildung endet bei uns nicht im Zertifikat an der Wand. Sie landet in der nächsten Teambesprechung – und ein paar Wochen später bei den Patienten.
+> Eine Fortbildung endet hier nicht im Zertifikat an der Wand. Sie landet in der nächsten Teambesprechung – und ein paar Wochen später bei den Patienten.
 >
 > Manuelle Therapie, Lymphdrainage, Bobath, CMD: Jede Zusatzqualifikation im Team macht die Praxis als Ganzes besser. Deshalb beteiligen wir uns an den Kosten.
 >
 > Weil Stillstand in diesem Beruf keine Option ist. 💪
 >
-> #fortbildung #physiotherapie #manuelletherapie #lymphdrainage #bobath #cmd #weiterbildung #rottweil #praxisgscheidle #teamarbeit
+> #fortbildung #physiotherapie #manuelletherapie #lymphdrainage #bobath #cmd #weiterbildung #arbeitenbeiuns #rottweil #praxisgscheidle
 
-**Wann posten:** das stärkste Signal an Therapeut:innen, die sich
-weiterentwickeln wollen – auch ohne dass eine Stelle dabeisteht.
+**Warum das zieht:** Das stärkste Signal an Therapeut:innen, die sich
+weiterentwickeln wollen – ohne dass eine Stelle dabeisteht.
 
 ---
 
@@ -88,9 +92,12 @@ gesehen hat, erkennt die Praxis wieder.
 Weitere Themen, die ohne Stellenausschreibung funktionieren und für die nur
 ein Foto fehlt:
 
-- **Das Team am Empfang** – wer ans Telefon geht, wenn um 7:00 Uhr der erste Anruf kommt
-- **Hausbesuche** – warum die Praxis in die Pflegeheime der Region fährt
-- **Ein Gerät, eine Methode** – z. B. die Stoßwellentherapie kurz erklärt
-- **Patientenfrage der Woche** – fachlich antworten, das zeigt Kompetenz nach außen und innen
+- **Ein Tag im Behandlungsraum** – was zwischen erstem und letztem Termin passiert
+- **Hausbesuche** – wie die Touren laufen und warum der Dienstwagen dazugehört
+- **Teambesprechung** – wie fachlicher Austausch hier konkret aussieht
+- **Neue Kollegin, erste Woche** – Einarbeitung aus ihrer Sicht erzählt
+
+Alle vier bleiben in der Perspektive „so arbeiten wir" und schreiben keine
+Stelle aus. Für jeden fehlt nur ein Foto.
 
 Sag Bescheid, dann baue ich die als Motive dazu.
