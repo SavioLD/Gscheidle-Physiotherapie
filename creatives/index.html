@@ -27,6 +27,7 @@ body.render .canvas{margin:0 0 1px 0}
 .canvas{position:relative;overflow:hidden;flex:0 0 auto;display:flex;flex-direction:column;
         justify-content:space-between;color:#fff;isolation:isolate}
 .canvas--45{width:1080px;height:1350px;padding:88px 84px}
+.canvas--1x1{width:1080px;height:1080px;padding:68px 76px}
 .canvas--story{width:1080px;height:1920px;padding:210px 84px 190px}
 
 /* Farbwelten */
@@ -45,6 +46,7 @@ body.render .canvas{margin:0 0 1px 0}
 .canvas__mark{position:absolute;z-index:-1;pointer-events:none}
 .canvas--45 .canvas__mark{right:-110px;bottom:-70px;width:440px;height:auto}
 .canvas--story .canvas__mark{right:-130px;bottom:-40px;width:540px;height:auto}
+.canvas--1x1 .canvas__mark{right:-90px;bottom:-60px;width:360px;height:auto}
 .t-dark .canvas__mark{opacity:.16}
 .t-mint .canvas__mark{opacity:.10}
 .t-light .canvas__mark{opacity:.055}
@@ -53,11 +55,13 @@ body.render .canvas{margin:0 0 1px 0}
 .head{display:flex;align-items:flex-start;justify-content:space-between;gap:30px}
 .head__logo{width:330px;height:auto}
 .canvas--story .head__logo{width:390px}
+.canvas--1x1 .head__logo{width:300px}
 
 .eyebrow{display:inline-flex;align-self:flex-start;align-items:center;gap:15px;font-family:"Montserrat",sans-serif;
          font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:23px;
          padding:15px 28px;border-radius:999px}
-.canvas--story .eyebrow{font-size:26px;padding:17px 32px}
+.canvas--story .eyebrow{font-size:28px;padding:17px 32px}
+.canvas--1x1 .eyebrow{font-size:25px;padding:13px 24px}
 .eyebrow .dot{width:15px;height:15px;border-radius:50%;background:currentColor}
 .t-dark .eyebrow{color:var(--mint);background:rgba(89,195,183,.14);border:2px solid rgba(89,195,183,.38)}
 .t-mint .eyebrow{color:var(--ink-900);background:rgba(12,51,47,.10);border:2px solid rgba(12,51,47,.22)}
@@ -65,15 +69,28 @@ body.render .canvas{margin:0 0 1px 0}
 
 /* ---------- Mitte ---------- */
 .body{display:flex;flex-direction:column;gap:34px}
+.canvas--1x1 .body{gap:24px}
 h1{font-family:"Montserrat",sans-serif;font-weight:800;line-height:1.04;letter-spacing:-.022em;font-size:106px}
 .canvas--story h1{font-size:124px}
+.canvas--1x1 h1{font-size:88px}
 h1 em{font-style:normal}
 .t-dark h1{color:#fff}  .t-dark h1 em{color:var(--mint)}
 .t-mint h1{color:rgba(12,51,47,.68)} .t-mint h1 em{color:var(--ink-900)}
 .t-light h1{color:var(--ink)} .t-light h1 em{color:#1E7A70}
 
+.badge{display:inline-flex;align-self:flex-start;align-items:center;gap:16px;font-family:"Montserrat",sans-serif;
+  font-weight:800;font-size:38px;line-height:1.2;padding:20px 32px;border-radius:16px;letter-spacing:-.01em}
+.canvas--story .badge{font-size:43px;padding:23px 36px}
+.canvas--1x1 .badge{font-size:32px;padding:16px 26px;gap:13px}
+.badge .ic{width:40px;height:40px;flex:0 0 auto;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.canvas--1x1 .badge .ic{width:33px;height:33px}
+.t-dark .badge{background:var(--mint);color:var(--ink-900)} .t-dark .badge .ic{stroke:var(--ink-900)}
+.t-mint .badge{background:var(--ink);color:#fff}           .t-mint .badge .ic{stroke:#fff}
+.t-light .badge{background:#1E7A70;color:#fff}             .t-light .badge .ic{stroke:#fff}
+
 .sub{font-size:38px;line-height:1.38;font-weight:500;max-width:840px}
 .canvas--story .sub{font-size:43px}
+.canvas--1x1 .sub{font-size:33px}
 .t-dark .sub{color:rgba(255,255,255,.90)}
 .t-mint .sub{color:rgba(12,51,47,.82)}
 .t-light .sub{color:#3E635D}
@@ -81,9 +98,11 @@ h1 em{font-style:normal}
 /* Haken-Liste */
 .ticks{display:flex;flex-direction:column;gap:22px;font-size:37px;font-weight:600;line-height:1.25}
 .canvas--story .ticks{font-size:42px;gap:26px}
+.canvas--1x1 .ticks{font-size:31px;gap:17px}
 .ticks div{display:flex;align-items:flex-start;gap:22px}
 .ticks svg{width:44px;height:44px;flex:0 0 auto;margin-top:2px;stroke-width:3.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .canvas--story .ticks svg{width:50px;height:50px}
+.canvas--1x1 .ticks svg{width:38px;height:38px}
 .t-dark .ticks{color:#fff} .t-dark .ticks svg{stroke:var(--mint)}
 .t-mint .ticks{color:var(--ink-900)} .t-mint .ticks svg{stroke:var(--ink-900)}
 .t-light .ticks{color:var(--ink)} .t-light .ticks svg{stroke:#1E7A70}
@@ -93,6 +112,7 @@ h1 em{font-style:normal}
 .bignum.is-long{font-size:170px}
 .canvas--story .bignum.is-long{font-size:205px}
 .canvas--story .bignum{font-size:300px}
+.canvas--1x1 .bignum{font-size:200px}
 .t-dark .bignum{color:var(--mint)}
 .t-mint .bignum{color:var(--ink-900)}
 .t-light .bignum{color:#1E7A70}
@@ -101,6 +121,7 @@ h1 em{font-style:normal}
 .terms{display:flex;flex-wrap:wrap;gap:16px 14px;max-width:900px}
 .term{font-family:"Montserrat",sans-serif;font-weight:700;font-size:35px;padding:14px 26px;border-radius:999px;white-space:nowrap}
 .canvas--story .term{font-size:39px;padding:16px 30px}
+.canvas--1x1 .term{font-size:30px;padding:12px 22px}
 .t-dark .term{color:#fff;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.22)}
 .t-light .term{color:var(--ink);background:#fff;border:2px solid rgba(19,72,66,.16)}
 .term.is-hot{background:var(--mint);border-color:var(--mint);color:var(--ink-900)}
@@ -108,11 +129,13 @@ h1 em{font-style:normal}
 
 /* ---------- Fuss ---------- */
 .foot{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:34px}
+.canvas--1x1 .foot{padding-top:24px;gap:20px}
 .t-dark .foot{border-top:2px solid rgba(255,255,255,.20)}
 .t-mint .foot{border-top:2px solid rgba(12,51,47,.20)}
 .t-light .foot{border-top:2px solid rgba(19,72,66,.16)}
 .foot__txt{font-size:30px;font-weight:600;line-height:1.3}
 .canvas--story .foot__txt{font-size:34px}
+.canvas--1x1 .foot__txt{font-size:26px}
 .t-dark .foot__txt{color:rgba(255,255,255,.82)}
 .t-mint .foot__txt{color:rgba(12,51,47,.78)}
 .t-light .foot__txt{color:#3E635D}
@@ -122,6 +145,7 @@ h1 em{font-style:normal}
 .cta{display:inline-flex;align-items:center;gap:18px;font-family:"Montserrat",sans-serif;font-weight:800;
      font-size:33px;padding:26px 44px;border-radius:16px;white-space:nowrap}
 .canvas--story .cta{font-size:37px;padding:29px 50px}
+.canvas--1x1 .cta{font-size:29px;padding:22px 36px}
 .cta svg{width:34px;height:34px;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:currentColor}
 .t-dark .cta{background:var(--mint);color:var(--ink-900)}
 .t-mint .cta{background:var(--ink);color:#fff}
@@ -135,6 +159,8 @@ body.render .label{display:none}
 <div id="out"></div>
 
 <script>
+const CAR = '<svg class="ic" viewBox="0 0 24 24"><path d="M5 17h14l-1.6-5.3A2 2 0 0 0 15.5 10h-7a2 2 0 0 0-1.9 1.7z"/>'
+  + '<circle cx="7.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/><path d="M3 13h1M20 13h1"/></svg>';
 const TICK  = '<svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>';
 const ARROW = '<svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>';
 
@@ -147,55 +173,67 @@ const FOOT = {
 };
 
 const MOTIVE = [
+  /* Stelle zuerst, Dienstwagen direkt darunter - man sieht sofort,
+     worum es geht, und erst danach den Vorteil. */
   {
-    name:'dienstwagen', theme:'t-mint',
-    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
-    h1:'Dienstwagen. <em>Auch privat.</em>',
-    sub:'Den Wagen für die Hausbesuche stellen wir – ohne Eigenanteil, ohne Gehaltsumwandlung. Nach Feierabend fährst du ihn genauso.',
-    ticks:['Voll- oder Teilzeit, unbefristet','Keine Wochenenddienste']
+    name:'stelle-dienstwagen', theme:'t-dark', photo:'behandlungsraum.jpg',
+    eyebrow:'Praxis Gscheidle · Rottweil',
+    h1:'Physiotherapeut:in <em>(m/w/d)</em> gesucht',
+    badge:'Dienstwagen · auch privat',
+    sub:'Voll- oder Teilzeit, unbefristet. Den Wagen für die Hausbesuche stellen wir – ohne Eigenanteil.'
   },
   {
-    name:'dienstwagen-null', theme:'t-dark',
-    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
-    bignum:'0 €',
-    h1:'für deinen <em>Dienstwagen</em>.',
-    sub:'Wir stellen ihn für die Hausbesuche – und du fährst ihn auch privat. Kein Eigenanteil, keine Gehaltsumwandlung.',
+    name:'stelle-null-euro', theme:'t-mint',
+    eyebrow:'Praxis Gscheidle · Rottweil',
+    h1:'Physiotherapeut:in <em>(m/w/d)</em> gesucht',
+    badge:'0 € Eigenanteil für deinen Dienstwagen',
+    sub:'Wir stellen ihn für die Hausbesuche, du fährst ihn auch privat. Keine Gehaltsumwandlung.',
     ticks:['Voll- oder Teilzeit, unbefristet','Mo–Fr, keine Wochenenddienste']
   },
   {
-    name:'dienstwagen-privat', theme:'t-light',
-    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
-    h1:'Auch sonntags <em>dein Auto</em>.',
-    sub:'Den Dienstwagen für die Hausbesuche stellen wir dir. Was du am Wochenende damit machst, ist deine Sache.',
+    name:'stelle-sonntags', theme:'t-light',
+    eyebrow:'Praxis Gscheidle · Rottweil',
+    h1:'Physiotherapeut:in <em>(m/w/d)</em> in Rottweil',
+    badge:'Auch sonntags dein Auto',
+    sub:'Den Dienstwagen für die Hausbesuche stellen wir dir. Am Wochenende gehört er dir.',
     ticks:['Gestellt von uns, kein Eigenanteil','Unbefristet, Voll- oder Teilzeit']
   },
+
+  /* Motive, die über einen einzelnen Vorteil einsteigen. */
   {
     name:'wochenende', theme:'t-dark', photo:'behandlungsraum.jpg',
-    eyebrow:'Physiotherapeut:in (m/w/d)',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
     h1:'Samstag gehört <em>dir</em>.',
-    sub:'Montag bis Freitag, 07:00–19:00 Uhr. Keine Wochenenddienste, keine Rufbereitschaft – und deine Zeiten legen wir gemeinsam fest.',
-    ticks:['Voll- oder Teilzeit, 20–40 Stunden','Unbefristet, mitten in Rottweil']
+    sub:'Montag bis Freitag, 07:00–19:00 Uhr. Keine Wochenenddienste, keine Rufbereitschaft.',
+    ticks:['Voll- oder Teilzeit, 20–40 Stunden','Dienstwagen gestellt, auch privat']
   },
   {
-    name:'fortbildung', theme:'t-light',
-    eyebrow:'Physiotherapeut:in (m/w/d)',
-    h1:'Fortbildung? <em>Zahlen wir.</em>',
-    sub:'MT, Lymphdrainage, Bobath, CMD: Was zu dir und zur Praxis passt, übernehmen wir nach Absprache.',
-    ticks:['Zusatzqualifikationen willkommen, aber kein Muss','Volles Behandlungsspektrum statt Behandlung von der Stange']
+    name:'zeit-pro-patient', theme:'t-light',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
+    h1:'Wie viel Zeit bleibt dir <em>pro Patient</em>?',
+    sub:'Eine Frage, die zu selten gestellt wird. Bei uns bekommst du eine ehrliche Antwort – bevor du unterschreibst.',
+    ticks:['Befund und Therapieplan liegen bei dir','Kurze Absprachen statt langer Dienstwege']
   },
   {
     name:'sieben', theme:'t-mint',
-    eyebrow:'Wir stellen ein · Rottweil',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
     bignum:'7',
     h1:'Kolleg:innen. <em>Eine:r fehlt noch.</em>',
     sub:'5 Therapeut:innen zum Fachsimpeln und zwei Kolleginnen an der Rezeption.'
   },
   {
-    name:'zeit-pro-patient', theme:'t-light',
-    eyebrow:'Physiotherapeut:in (m/w/d)',
-    h1:'Wie viel Zeit bleibt dir <em>pro Patient</em>?',
-    sub:'Eine Frage, die zu selten gestellt wird. Bei uns bekommst du eine ehrliche Antwort – bevor du unterschreibst.',
-    ticks:['Befund und Therapieplan liegen bei dir','Kurze Absprachen im Team statt langer Dienstwege']
+    name:'ohne-lebenslauf', theme:'t-dark', photo:'behandlungsraum.jpg',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
+    h1:'Vier Fragen. <em>Kein Lebenslauf.</em>',
+    sub:'Die kürzeste Bewerbung deines Lebens – und danach wisst ihr beide, ob es passt.',
+    ticks:['Kein Anschreiben, keine Zeugnisse','Wir melden uns persönlich']
+  },
+  {
+    name:'fortbildung', theme:'t-light',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
+    h1:'Fortbildung? <em>Zahlen wir.</em>',
+    sub:'MT, Lymphdrainage, Bobath, CMD: Was zu dir und zur Praxis passt, übernehmen wir nach Absprache.',
+    ticks:['Zusatzqualifikationen willkommen, kein Muss','Volles Behandlungsspektrum']
   },
   {
     name:'spektrum', theme:'t-dark',
@@ -206,32 +244,24 @@ const MOTIVE = [
   },
   {
     name:'rezeption', theme:'t-mint',
-    eyebrow:'Wir stellen ein · Rottweil',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
     h1:'Termine macht die Rezeption. <em>Du machst Therapie.</em>',
     sub:'Zwei Kolleginnen am Empfang nehmen dir Terminplanung und Papierkram ab.',
     ticks:['Voll- oder Teilzeit, unbefristet','Keine Wochenenddienste']
   },
   {
     name:'seit-1998', theme:'t-dark',
-    eyebrow:'Physiotherapeut:in (m/w/d)',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
     bignum:'1998',
     h1:'gegründet. <em>Nie ein Fließband.</em>',
-    sub:'Praxen kommen und gehen. Wir sind seit über 25 Jahren in Rottweil – gewachsen auf 7 Kolleg:innen und jetzt auf der Suche nach Verstärkung.'
-  },
-  {
-    name:'ohne-lebenslauf', theme:'t-dark', photo:'behandlungsraum.jpg',
-    eyebrow:'Physiotherapeut:in (m/w/d)',
-    h1:'Vier Fragen. <em>Kein Lebenslauf.</em>',
-    sub:'Die kürzeste Bewerbung deines Lebens – und danach wisst ihr beide, ob es passt.',
-    ticks:['Kein Anschreiben, keine Zeugnisse','Wir melden uns persönlich, meist telefonisch']
+    sub:'Praxen kommen und gehen. Wir sind seit über 25 Jahren in Rottweil – gewachsen auf 7 Kolleg:innen.'
   }
 ];
 
 function build(m, fmt){
-  const story = fmt === 'story';
   const el = document.createElement('div');
-  el.className = `canvas canvas--${story ? 'story' : '45'} ${m.theme}`;
-  el.dataset.name = `${m.name}-${story ? 'story' : '45'}`;
+  el.className = `canvas canvas--${fmt} ${m.theme}`;
+  el.dataset.name = `${m.name}-${fmt}`;
   const logo = m.theme === 't-dark' ? '../assets/logo-weiss.png' : '../assets/logo.png';
 
   const middle = [];
@@ -239,6 +269,7 @@ function build(m, fmt){
   middle.push(`<h1>${m.h1}</h1>`);
   if (m.terms) middle.push(`<div class="terms">${m.terms.map((t,i) =>
       `<span class="term${i % 3 === 0 ? ' is-hot' : ''}">${t}</span>`).join('')}</div>`);
+  if (m.badge) middle.push(`<span class="badge">${CAR}${m.badge}</span>`);
   if (m.sub)   middle.push(`<p class="sub">${m.sub}</p>`);
   if (m.ticks) middle.push(`<div class="ticks">${m.ticks.map(t =>
       `<div>${TICK}<span>${t}</span></div>`).join('')}</div>`);
@@ -264,18 +295,37 @@ function build(m, fmt){
   return el;
 }
 
+/* Lange, nicht trennbare Woerter wie "Physiotherapeut:in" sind bei voller
+   Schriftgroesse breiter als die Flaeche und wuerden rechts abgeschnitten.
+   Die Ueberschrift wird deshalb so weit verkleinert, bis sie passt. */
+function passeUeberschriftAn(el){
+  const h = el.querySelector('h1');
+  if (!h) return;
+  h.style.fontSize = '';
+  let groesse = parseFloat(getComputedStyle(h).fontSize);
+  let schutz = 60;
+  while (h.scrollWidth > h.clientWidth + 1 && groesse > 42 && schutz--) {
+    groesse -= 2;
+    h.style.fontSize = groesse + 'px';
+  }
+}
+function alleAnpassen(){ document.querySelectorAll('.canvas').forEach(passeUeberschriftAn); }
+
 const out = document.getElementById('out');
 const render = new URLSearchParams(location.search).has('render');
 if (render) document.body.classList.add('render');
-MOTIVE.forEach(m => ['45','story'].forEach(f => {
+MOTIVE.forEach(m => ['45','1x1','story'].forEach(f => {
   if (!render){
     const lab = document.createElement('div');
     lab.className = 'label';
-    lab.textContent = `${m.name} · ${f === '45' ? '4:5 Feed' : '9:16 Story'}`;
+    lab.textContent = `${m.name} · ${ {'45':'4:5 Feed','1x1':'1:1 Feed','story':'9:16 Story'}[f] }`;
     out.appendChild(lab);
   }
   out.appendChild(build(m, f));
 }));
+
+alleAnpassen();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(alleAnpassen);
 </script>
 </body>
 </html>

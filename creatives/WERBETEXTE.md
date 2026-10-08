@@ -65,7 +65,7 @@ wackeln.
 | Alter | 20 – 60 |
 | Geschlecht | alle |
 | Interessen | **keine** – die Zielgruppe ist klein, die Vorfilterung passiert im Formular |
-| Platzierungen | Advantage+ (Feed, Reels, Stories) – deshalb beide Formate hochladen |
+| Platzierungen | Advantage+ (Feed, Reels, Stories) – alle drei Formate hochladen, Meta wählt je Platzierung |
 | Budget | 15–25 € / Tag, mindestens 7 Tage laufen lassen |
 | CTA-Button | „Jetzt bewerben" |
 
@@ -83,8 +83,8 @@ rotieren über dieselben vier Anzeigen.
 ```
 Kampagne: Recruiting Physiotherapeut:in Rottweil
 └── Anzeigengruppe: Rottweil 35 km
-    ├── Anzeige 1: dienstwagen-null   (0 € – härtester Aufhänger)
-    ├── Anzeige 2: dienstwagen        (dasselbe Argument, türkis statt dunkel)
+    ├── Anzeige 1: stelle-dienstwagen (Stelle + Dienstwagen, auf dem Praxisfoto)
+    ├── Anzeige 2: stelle-null-euro   (Stelle + 0 € Eigenanteil)
     ├── Anzeige 3: wochenende         (Praxisfoto, keine Wochenenddienste)
     └── Anzeige 4: zeit-pro-patient   (trifft den wundesten Punkt)
 Retargeting (ab ~300 Seitenaufrufen):
@@ -93,7 +93,7 @@ Retargeting (ab ~300 Seitenaufrufen):
 ```
 
 **Nachrücker für Welle 2**, wenn nach 5–7 Tagen die schwächsten zwei
-abgeschaltet werden: `dienstwagen-privat`, `sieben`, `rezeption`, `fortbildung`,
+abgeschaltet werden: `stelle-sonntags`, `sieben`, `rezeption`, `fortbildung`,
 `spektrum`, `seit-1998`.
 
 Nicht früher eingreifen – Meta braucht die ersten Tage zum Einpendeln.
