@@ -10,6 +10,9 @@ Die Anzeigentexte stehen in [`WERBETEXTE.md`](WERBETEXTE.md): drei Primärtexte,
 dazu eine Überschrift und eine Beschreibung, die über alle Anzeigen gleich
 bleiben – so wackelt beim Testen nicht alles gleichzeitig.
 
+Dazu kommen drei **organische Instagram-Beiträge zur Arbeitgebermarke**, die
+bewusst keine Stelle ausschreiben: [`INSTAGRAM.md`](INSTAGRAM.md).
+
 ## Die elf Konzepte
 
 Drei Motive liegen auf dem echten Praxisfoto, die übrigen arbeiten nur mit
@@ -44,6 +47,18 @@ das die Ausspielung, und keins bekommt genug Daten. Mit vier starten, nach
 Dienstwagen, weil er das stärkste Argument der Praxis ist (Vorschlag in
 [`WERBETEXTE.md`](WERBETEXTE.md)).
 
+## Beiträge zur Arbeitgebermarke
+
+| Beitrag | Überschrift | Fläche |
+|---|---|---|
+| `marke-befund` | „Ein Befund ist kein Formular." – wie hier gearbeitet wird | **Praxisfoto** |
+| `marke-1998` | „Dieselbe Straße. Seit 1998." – Beständigkeit und Ort | Türkis |
+| `marke-fortbildung` | „Was eine:r lernt, können bald alle." – Haltung zur Weiterbildung | helle Fläche |
+
+Diese drei tragen das Feld `brand:true`. Damit fällt der „Jetzt bewerben"-Knopf
+weg und im Fuß steht nur die Praxis – es sind Beiträge, keine Anzeigen. Die
+Texte dazu stehen in [`INSTAGRAM.md`](INSTAGRAM.md).
+
 ## Neu rendern
 
 ```bash
@@ -69,7 +84,8 @@ Alles steckt im `MOTIVE`-Array unten in [`index.html`](index.html):
   ticks:['…','…'],                // optionale Hakenliste
   bignum:'7',                     // optionale grosse Zahl über der Headline
   badge:'Dienstwagen · auch privat', // optionales Badge unter der Headline
-  photo:'behandlungsraum.jpg'     // optionales Foto, nur mit theme t-dark
+  photo:'behandlungsraum.jpg',    // optionales Foto, nur mit theme t-dark
+  brand:true                      // Beitrag statt Anzeige: ohne Bewerben-Knopf
 }
 ```
 

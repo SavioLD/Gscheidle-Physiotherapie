@@ -142,6 +142,10 @@ h1 em{font-style:normal}
 .foot__txt b{display:block;font-family:"Montserrat",sans-serif;font-weight:700}
 .t-dark .foot__txt b{color:#fff} .t-mint .foot__txt b{color:var(--ink-900)} .t-light .foot__txt b{color:var(--ink)}
 
+.canvas--marke .foot{justify-content:flex-start}
+.canvas--marke .foot__txt{font-size:33px}
+.canvas--story.canvas--marke .foot__txt{font-size:37px}
+.canvas--1x1.canvas--marke .foot__txt{font-size:28px}
 .cta{display:inline-flex;align-items:center;gap:18px;font-family:"Montserrat",sans-serif;font-weight:800;
      font-size:33px;padding:26px 44px;border-radius:16px;white-space:nowrap}
 .canvas--story .cta{font-size:37px;padding:29px 50px}
@@ -166,6 +170,8 @@ const ARROW = '<svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7
 
 /* Wasserzeichen: die Figur direkt aus dem Logo, je nach Flaeche hell oder dunkel. */
 const MARK = t => `<img class="canvas__mark" src="../assets/${t === 't-dark' ? 'figur.png' : 'figur-dunkel.png'}" alt="" />`;
+
+const MARKE_FOOT = '<b>Physiotherapiepraxis Gscheidle GmbH</b>Königstraße 28 · Rottweil · physiotherapie-rottweil.de';
 
 const FOOT = {
   txt:'<b>Physiotherapiepraxis Gscheidle GmbH</b>Königstraße 28 · Rottweil · seit 1998',
@@ -249,6 +255,27 @@ const MOTIVE = [
     sub:'Zwei Kolleginnen am Empfang nehmen dir Terminplanung und Papierkram ab.',
     ticks:['Voll- oder Teilzeit, unbefristet','Keine Wochenenddienste']
   },
+  /* Arbeitgebermarke: erzaehlen, wie die Praxis arbeitet. Keine Stelle,
+     kein Bewerben-Knopf - das laeuft ueber die Anzeigen. */
+  {
+    name:'marke-befund', theme:'t-dark', photo:'behandlungsraum.jpg', brand:true,
+    eyebrow:'Wie wir arbeiten',
+    h1:'Ein Befund ist <em>kein Formular</em>.',
+    sub:'Bevor die erste Übung kommt, schauen wir hin, hören zu und fassen an. Das dauert – und genau dafür ist die Zeit da.'
+  },
+  {
+    name:'marke-1998', theme:'t-mint', brand:true,
+    eyebrow:'Wer wir sind',
+    h1:'Dieselbe Straße. <em>Seit 1998.</em>',
+    sub:'Königstraße 28, sieben Kolleg:innen, Hausbesuche und Pflegeheime in der Region. Manches muss man nicht neu erfinden.'
+  },
+  {
+    name:'marke-fortbildung', theme:'t-light', brand:true,
+    eyebrow:'Warum wir Fortbildungen zahlen',
+    h1:'Was eine:r lernt, <em>können bald alle</em>.',
+    sub:'Eine Fortbildung endet bei uns nicht im Zertifikat. Sie landet in der nächsten Teambesprechung – und danach bei den Patienten.'
+  },
+
   {
     name:'seit-1998', theme:'t-dark',
     eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
@@ -278,6 +305,7 @@ function build(m, fmt){
     ? `<div class="canvas__photo" style="background-image:url('../bilder/${m.photo}')"></div><div class="canvas__veil"></div>`
     : MARK(m.theme);
   if (m.photo) el.classList.add('canvas--photo');
+  if (m.brand) el.classList.add('canvas--marke');
 
   el.innerHTML = `
     ${bild}
@@ -289,8 +317,8 @@ function build(m, fmt){
       ${middle.join('')}
     </div>
     <div class="foot">
-      <div class="foot__txt">${FOOT.txt}</div>
-      <span class="cta">${FOOT.cta}${ARROW}</span>
+      <div class="foot__txt">${m.brand ? MARKE_FOOT : FOOT.txt}</div>
+      ${m.brand ? '' : `<span class="cta">${FOOT.cta}${ARROW}</span>`}
     </div>`;
   return el;
 }
