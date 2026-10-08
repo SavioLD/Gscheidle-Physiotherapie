@@ -34,6 +34,13 @@ body.render .canvas{margin:0 0 1px 0}
 .t-mint{background:var(--mint);color:var(--ink-900)}
 .t-light{background:var(--soft);color:var(--ink)}
 
+/* Motive mit echtem Praxisfoto: Bild ganz hinten, darueber der CI-Schleier */
+.canvas--photo{background:#0A2E2A}
+.canvas__photo{position:absolute;inset:0;background-size:cover;background-position:center 58%;z-index:-3}
+.canvas__veil{position:absolute;inset:0;z-index:-2;
+  background:linear-gradient(168deg,rgba(10,46,42,.93) 0%,rgba(19,72,66,.84) 52%,rgba(42,158,144,.70) 100%)}
+.canvas--photo .canvas__mark{display:none}
+
 /* dezente Figur als Wasserzeichen, damit die Flaeche nicht leer wirkt */
 .canvas__mark{position:absolute;z-index:-1;pointer-events:none}
 .canvas--45 .canvas__mark{right:-110px;bottom:-70px;width:440px;height:auto}
@@ -148,7 +155,14 @@ const MOTIVE = [
     ticks:['Voll- oder Teilzeit, unbefristet','Keine Wochenenddienste']
   },
   {
-    name:'wochenende', theme:'t-dark',
+    name:'einarbeitung', theme:'t-light',
+    eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
+    h1:'Stoßwelle? <em>Zeigen wir dir.</em>',
+    sub:'Was du noch nicht kannst, lernst du bei uns – an echten Patienten, nicht im Seminarraum. Mitbringen musst du es nicht.',
+    ticks:['Zusatzqualifikationen willkommen, aber kein Muss','Fortbildungen zahlen wir nach Absprache']
+  },
+  {
+    name:'wochenende', theme:'t-dark', photo:'behandlungsraum.jpg',
     eyebrow:'Physiotherapeut:in (m/w/d)',
     h1:'Samstag gehört <em>dir</em>.',
     sub:'Montag bis Freitag, 07:00–19:00 Uhr. Keine Wochenenddienste, keine Rufbereitschaft – und deine Zeiten legen wir gemeinsam fest.',
@@ -197,7 +211,7 @@ const MOTIVE = [
     sub:'Praxen kommen und gehen. Wir sind seit über 25 Jahren in Rottweil – gewachsen auf 7 Kolleg:innen und jetzt auf der Suche nach Verstärkung.'
   },
   {
-    name:'ohne-lebenslauf', theme:'t-dark',
+    name:'ohne-lebenslauf', theme:'t-dark', photo:'behandlungsraum.jpg',
     eyebrow:'Physiotherapeut:in (m/w/d)',
     h1:'Vier Fragen. <em>Kein Lebenslauf.</em>',
     sub:'Die kürzeste Bewerbung deines Lebens – und danach wisst ihr beide, ob es passt.',
@@ -221,8 +235,13 @@ function build(m, fmt){
   if (m.ticks) middle.push(`<div class="ticks">${m.ticks.map(t =>
       `<div>${TICK}<span>${t}</span></div>`).join('')}</div>`);
 
+  const bild = m.photo
+    ? `<div class="canvas__photo" style="background-image:url('../bilder/${m.photo}')"></div><div class="canvas__veil"></div>`
+    : MARK(m.theme);
+  if (m.photo) el.classList.add('canvas--photo');
+
   el.innerHTML = `
-    ${MARK(m.theme)}
+    ${bild}
     <div class="head">
       <img class="head__logo" src="${logo}" alt="" />
     </div>

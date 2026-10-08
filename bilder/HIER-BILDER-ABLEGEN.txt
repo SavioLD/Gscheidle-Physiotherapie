@@ -1,15 +1,24 @@
-Bildmaterial der Praxis bitte hier ablegen.
+Bildmaterial der Praxis.
 
-Hero-Bild der Karriereseite
----------------------------
-Dateiname:  hero.jpg   (alternativ hero.jpeg / hero.png / hero.webp)
-Format:     Querformat, mindestens 1600 px breit
-Motiv:      Behandlungsraum, Team oder Praxis. Das Motiv sollte rechts
-            liegen - links liegt die Textflaeche des Heros.
+Bereits hier
+------------
+behandlungsraum.jpg   Hero der Karriereseite und Hintergrund der Creatives
+                      wochenende und ohne-lebenslauf
 
-Liegt kein Bild hier, bleibt im Hero der CI-Farbverlauf stehen. Es wird
-also nie ein kaputtes Bild angezeigt.
+Weitere Fotos
+-------------
+Einfach hier ablegen, gerne mit sprechenden Dateinamen, z. B.
+  team.jpg, empfang.jpg, behandlung-mt.jpg, praxis-aussen.jpg
 
-Weiteres Material fuer die Meta-Creatives (Schritt 2) kann ebenfalls in
-diesen Ordner - gerne mit sprechenden Dateinamen, z. B.:
-  team.jpg, behandlung-mt.jpg, empfang.jpg, praxis-aussen.jpg
+Hero der Karriereseite
+----------------------
+Welches Bild im Hero liegt, steht in index.html unter HERO_IMG. Hochformat
+funktioniert (das aktuelle Foto ist eins), Querformat ab ca. 1600 px Breite
+sitzt aber ruhiger. Findet sich keine der Dateien, bleibt der CI-Farbverlauf
+stehen - ein kaputtes Bild wird nie angezeigt.
+
+Creatives
+---------
+Ein Motiv bekommt ein Foto ueber das Feld photo im MOTIVE-Array in
+creatives/index.html, danach python3 render.py ausfuehren. Fotos
+funktionieren nur auf den dunklen Motiven (theme t-dark).

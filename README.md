@@ -142,9 +142,13 @@ komplette Formularkarte passt auf allen drei Größen ohne Scrollen ins Display.
 
 ## Bilder
 
-Die Seite läuft ohne Bildmaterial – im Hero steht dann der CI-Farbverlauf.
-Sobald ein Foto unter `bilder/hero.jpg` liegt, wird es automatisch eingeblendet
-(Details siehe `bilder/HIER-BILDER-ABLEGEN.txt`).
+Im Hero liegt das Praxisfoto `bilder/behandlungsraum.jpg`, darüber der
+CI-Farbverlauf. Die Ladekette steht im Script unter `HERO_IMG`: Fehlt die Datei,
+wird der Reihe nach `bilder/hero.jpg` und so weiter versucht; findet sich gar
+kein Bild, bleibt der Farbverlauf stehen – ein kaputtes Bild gibt es nie.
+
+Dasselbe Foto liegt auch hinter den Creatives `wochenende` und
+`ohne-lebenslauf` (siehe `creatives/README.md`).
 
 ## CI
 

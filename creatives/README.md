@@ -10,16 +10,16 @@ Motive, damit sich die Motive sauber gegeneinander messen lassen.
 
 ## Die neun Konzepte
 
-Alle kommen **ohne Fotos** aus: nur Typografie, CI-Farben und das Logo.
-Sie sind damit sofort schaltbar.
+Zwei Motive liegen auf dem echten Praxisfoto, die übrigen arbeiten nur mit
+Typografie, CI-Farben und Logo. Alle sind sofort schaltbar.
 
 | Konzept | Hook | Fläche |
 |---|---|---|
 | `dienstwagen` | „Dienstwagen. Auch privat.“ – das härteste Argument der Praxis | Türkis |
-| `wochenende` | „Samstag gehört dir." – Mo–Fr, 07–19 Uhr, keine Wochenenddienste | dunkelgrüner Verlauf |
+| `wochenende` | „Samstag gehört dir." – Mo–Fr, 07–19 Uhr, keine Wochenenddienste | **Praxisfoto** |
 | `fortbildung` | „Fortbildung? Zahlen wir." – MT, MLD, Bobath, CMD, nach Absprache | helle Fläche |
 | `sieben` | „7 Kolleg:innen. Eine:r fehlt noch." – Team und Rezeption | Türkis |
-| `ohne-lebenslauf` | „Vier Fragen. Kein Lebenslauf." – Anti-Aufwand, gut fürs Retargeting | dunkelgrüner Verlauf |
+| `ohne-lebenslauf` | „Vier Fragen. Kein Lebenslauf." – Anti-Aufwand, gut fürs Retargeting | **Praxisfoto** |
 | `zeit-pro-patient` | „Wie viel Zeit bleibt dir pro Patient?" – die Frage, die keiner stellt | helle Fläche |
 | `spektrum` | „Kein Tag wie der davor." – das Behandlungsspektrum als Wortfeld | dunkelgrüner Verlauf |
 | `rezeption` | „Termine macht die Rezeption. Du machst Therapie." – weniger Papierkram | Türkis |
@@ -63,10 +63,21 @@ Alles steckt im `MOTIVE`-Array unten in [`index.html`](index.html):
 
 Ein neuer Eintrag erzeugt beim nächsten `render.py` automatisch beide Formate.
 
-## Sobald Bildmaterial da ist
+## Fotos in Motiven
 
-Die Motive sind so gebaut, dass ein Foto als Hintergrund ergänzt werden kann,
-ohne die Textebene anzufassen: Foto in `../bilder/` ablegen, im `.canvas` als
-`background-image` setzen und den bestehenden Farbverlauf als Overlay
-darüberlegen. `wochenende` und `sieben` profitieren am meisten von einem
-echten Team- oder Praxisbild.
+Ein Motiv bekommt ein Foto, indem im `MOTIVE`-Eintrag `photo` gesetzt wird –
+der Dateiname relativ zu `../bilder/`:
+
+```js
+{ name:'wochenende', theme:'t-dark', photo:'behandlungsraum.jpg', … }
+```
+
+Das Bild liegt dann ganz hinten, darüber legt sich automatisch der CI-Schleier,
+damit die Typografie lesbar bleibt; das Figuren-Wasserzeichen entfällt bei
+Fotomotiven. Fotos funktionieren nur mit `t-dark` – auf den hellen und
+türkisen Flächen stünde weiße Schrift auf hellem Bild.
+
+Aktuell nutzen `wochenende` und `ohne-lebenslauf` das Foto
+`bilder/behandlungsraum.jpg`. Kommen weitere Fotos dazu, einfach ablegen und
+bei weiteren dunklen Motiven (`spektrum`, `seit-1998`) eintragen – unterschiedliche
+Bilder pro Motiv sind besser als dasselbe überall.
