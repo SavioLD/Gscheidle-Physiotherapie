@@ -18,7 +18,7 @@ Fremd-Requests (Schriften liegen im Repo).
 In `index.html` im `<script>`-Block ganz unten:
 
 ```js
-var WEB3FORMS_KEY = "";   /* <<< Access Key von web3forms.com hier einsetzen */
+var WEB3FORMS_KEY = "fc774f2d-…";   /* Access Key von web3forms.com – ist gesetzt */
 var WEBHOOK_URL   = "";   /* optional: LeadTable Generic Webhook */
 ```
 
@@ -33,7 +33,19 @@ Bewerbung an beide; es reicht, wenn einer der Wege durchkommt.
 
 Ist keiner von beiden gesetzt, wird **nichts** übertragen und über dem Formular
 erscheint ein oranger Hinweis für die Praxis. Sobald ein Empfänger drinsteht,
-verschwindet der Hinweis von selbst.
+verschwindet der Hinweis von selbst – aktuell ist der Web3Forms-Key gesetzt,
+der Hinweis also aus.
+
+Der Access Key gehört bauartbedingt in den Quelltext der Seite und ist damit
+öffentlich; so arbeitet Web3Forms. Damit niemand Fremdes darüber Mails an die
+Praxis schickt, im Web3Forms-Konto unter **Settings → Allowed Domains** die
+Domain der Karriereseite eintragen. Ein Honeypot-Feld gegen einfache Bots ist
+im Formular bereits eingebaut.
+
+Schlägt der Versand fehl (Netzfehler, Blocker im Browser), sieht der Bewerber
+**keine** Bestätigung, sondern eine Fehlermeldung mit der Telefonnummer und
+kann es erneut versuchen. Eine Bewerbung gilt nur als angekommen, wenn sie
+wirklich raus ist.
 
 ## Aufbau der Seite
 
