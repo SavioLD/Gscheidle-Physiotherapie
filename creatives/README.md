@@ -27,7 +27,7 @@ Typografie, CI-Farben und Logo. Alle sind sofort schaltbar.
 | `zeit-pro-patient` | „Wie viel Zeit bleibt dir pro Patient?" | helle Fläche |
 | `sieben` | „7 Kolleg:innen. Eine:r fehlt noch." | Türkis |
 | `ohne-lebenslauf` | „Vier Fragen. Kein Lebenslauf." – gut fürs Retargeting | **Praxisfoto** |
-| `fortbildung` | „Fortbildung? Zahlen wir." | helle Fläche |
+| `fortbildung` | „Fortbildung zahlen wir. Nach Absprache." | helle Fläche |
 | `spektrum` | „Kein Tag wie der davor." – Behandlungsspektrum als Wortfeld | dunkelgrüner Verlauf |
 | `rezeption` | „Termine macht die Rezeption. Du machst Therapie." | Türkis |
 | `seit-1998` | „1998 gegründet. Nie ein Fließband." | dunkelgrüner Verlauf |
@@ -89,6 +89,7 @@ Alles steckt im `MOTIVE`-Array unten in [`index.html`](index.html):
   ticks:['…','…'],                // optionale Hakenliste
   bignum:'7',                     // optionale grosse Zahl über der Headline
   badge:'Dienstwagen · auch privat', // optionales Badge unter der Headline
+  badgeIcon:false,                // Badge ohne das Auto-Symbol
   photo:'behandlungsraum.jpg',    // optionales Foto, nur mit theme t-dark
   brand:true                      // Beitrag statt Anzeige: ohne Bewerben-Knopf
 }

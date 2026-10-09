@@ -237,8 +237,8 @@ const MOTIVE = [
   {
     name:'fortbildung', theme:'t-light',
     eyebrow:'Physiotherapeut:in (m/w/d) · Rottweil',
-    h1:'Fortbildung? <em>Zahlen wir.</em>',
-    sub:'MT, Lymphdrainage, Bobath, CMD: Was zu dir und zur Praxis passt, übernehmen wir nach Absprache.',
+    h1:'Fortbildung zahlen wir. <em>Nach Absprache.</em>',
+    sub:'MT, Lymphdrainage, Bobath, CMD: Was zu dir und zur Praxis passt, übernehmen wir.',
     ticks:['Zusatzqualifikationen willkommen, kein Muss','Volles Behandlungsspektrum']
   },
   {
@@ -297,7 +297,7 @@ function build(m, fmt){
   middle.push(`<h1>${m.h1}</h1>`);
   if (m.terms) middle.push(`<div class="terms">${m.terms.map((t,i) =>
       `<span class="term${i % 3 === 0 ? ' is-hot' : ''}">${t}</span>`).join('')}</div>`);
-  if (m.badge) middle.push(`<span class="badge">${CAR}${m.badge}</span>`);
+  if (m.badge) middle.push(`<span class="badge">${m.badgeIcon === false ? '' : CAR}${m.badge}</span>`);
   if (m.sub)   middle.push(`<p class="sub">${m.sub}</p>`);
   if (m.ticks) middle.push(`<div class="ticks">${m.ticks.map(t =>
       `<div>${TICK}<span>${t}</span></div>`).join('')}</div>`);
