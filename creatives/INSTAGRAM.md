@@ -1,79 +1,78 @@
 # Instagram · Arbeitgebermarke
 
 Drei organische Beiträge, die **keine Stelle ausschreiben**. Sie beantworten
-eine einzige Frage: *Wie ist es, in dieser Praxis zu arbeiten?*
-
-Das ist der Unterschied zu normalem Praxismarketing. Ein Beitrag über gute
-Befunde oder lange Tradition spricht Patienten an. Diese drei sprechen
-Kolleg:innen an – über Entlastung, über Entscheidungswege, über
-Weiterentwicklung. Wer sich davon angesprochen fühlt, merkt sich die Praxis;
-bewerben kann er sich später über die Anzeigen.
+eine einzige Frage: *Wie ist es, in dieser Praxis zu arbeiten?* Wer sich davon
+angesprochen fühlt, merkt sich die Praxis; bewerben kann er sich später über
+die Anzeigen.
 
 Deshalb tragen alle drei die Kopfzeile **„Arbeiten bei uns"**, keinen
 „Jetzt bewerben"-Knopf und nennen die Stelle an keiner Stelle.
 
 **Dateien** (je 4:5, 1:1 und 9:16 in [`png/`](png)):
-`marke-rezeption`, `marke-unabhaengig`, `marke-fortbildung`
+`marke-empfang`, `marke-praxis`, `marke-fortbildung`
 
 Für den Feed 4:5 nehmen (bekommt am meisten Fläche), 1:1 wenn das Raster
 einheitlich bleiben soll, 9:16 für die Story-Zweitverwertung.
 
----
+## Haltung der Texte
 
-## 1 · „Den Papierkram machen zwei Kolleginnen."
+Die Beiträge sind bewusst schlicht und allgemein gehalten:
 
-**Datei:** `marke-rezeption-45.png` · **Fläche:** Praxisfoto
-
-> Den Papierkram machen zwei Kolleginnen. 📞
->
-> Termine vergeben, Telefon, Rezepte prüfen, Folgeverordnungen hinterher sein: In vielen Praxen macht das der oder die Therapeut:in zwischen zwei Behandlungen.
->
-> Bei uns nicht. Dafür sitzen zwei Kolleginnen am Empfang – von 7 bis 19 Uhr.
->
-> Damit die, die therapieren, auch wirklich therapieren können. 🤍
->
-> #physiotherapie #rottweil #arbeitenbeiuns #praxisteam #physiojob #teamarbeit #praxisgscheidle #gesundheitsberufe
-
-**Warum das zieht:** Der Verwaltungskram ist der meistgenannte Frustpunkt im
-Beruf. Wer ihn abnimmt, sagt mehr über sich als jede Floskel über „tolles Team".
-
----
-
-## 2 · „Keine Kette. Keine Zentrale."
-
-**Datei:** `marke-unabhaengig-45.png` · **Fläche:** Türkis
-
-> Keine Kette. Keine Zentrale. 📍
->
-> Eine Praxis, sieben Kolleg:innen, seit 1998 in der Königstraße 28.
->
-> Das heißt: Wenn etwas nicht läuft, wird es hier besprochen und hier entschieden. Kein Ticket an einen Hauptsitz, keine Vorgabe aus einer Region, die niemand kennt.
->
-> Kleine Praxis, kurze Wege. Manchmal ist das genau der Punkt. 🤍
->
-> #physiotherapie #rottweil #arbeitenbeiuns #inhabergeführt #kleineunternehmen #physiojob #praxisgscheidle #königstraße
-
-**Warum das zieht:** Immer mehr Praxen gehören zu Ketten. Unabhängigkeit ist für
-viele Therapeut:innen ein echtes Argument – man muss sie nur benennen.
+- **Keine Rolle wird einem Geschlecht zugeordnet.** Es heißt „der Empfang",
+  nicht „zwei Kolleginnen" – auch wenn das gerade so ist. Wer die Beiträge in
+  einem Jahr liest, soll sich nicht ausgeschlossen fühlen, und das Team kann
+  sich ändern, ohne dass der Beitrag falsch wird.
+- **Kein Vergleich mit anderen Arbeitgebern.** Kein „in vielen Praxen ist das
+  anders", kein Seitenhieb auf Ketten. Die Praxis sagt, wie sie es macht –
+  fertig.
+- **Keine Superlative, keine Appelle.** Kein „das stärkste Team", kein
+  „Stillstand ist keine Option". Solche Sätze altern schnell und wirken
+  bemüht.
+- **Durchgängig geschlechtsneutral oder in Paarform** („Kolleginnen und
+  Kollegen", „Patientinnen und Patienten", „jemand"). Das liest sich ruhiger
+  als Sonderzeichen und schließt niemanden aus.
 
 ---
 
-## 3 · „Was eine:r lernt, können bald alle."
+## 1 · „Am Empfang laufen die Fäden zusammen."
+
+**Datei:** `marke-empfang-45.png` · **Fläche:** Praxisfoto
+
+> Am Empfang laufen die Fäden zusammen.
+>
+> Termine, Telefon, Rezepte, Folgeverordnungen: Das liegt bei uns beim Empfang und nicht bei den Therapeutinnen und Therapeuten.
+>
+> So bleibt in der Behandlung Zeit für die Behandlung.
+>
+> #physiotherapie #rottweil #arbeitenbeiuns #praxisteam #teamarbeit #praxisgscheidle #gesundheitsberufe
+
+---
+
+## 2 · „Eine Praxis. Kurze Wege."
+
+**Datei:** `marke-praxis-45.png` · **Fläche:** Türkis
+
+> Eine Praxis. Kurze Wege.
+>
+> Sieben Kolleginnen und Kollegen, seit 1998 in der Königstraße 28 in Rottweil. Dazu Hausbesuche und die Pflegeheime in der Region.
+>
+> Was besprochen werden muss, wird hier besprochen – an einem Tisch.
+>
+> #physiotherapie #rottweil #arbeitenbeiuns #praxisteam #inhabergeführt #praxisgscheidle #königstraße
+
+---
+
+## 3 · „Fortbildung bleibt im Team."
 
 **Datei:** `marke-fortbildung-45.png` · **Fläche:** helle Fläche
 
-> Was eine:r lernt, können bald alle. 📚
+> Fortbildung bleibt im Team.
 >
-> Eine Fortbildung endet hier nicht im Zertifikat an der Wand. Sie landet in der nächsten Teambesprechung – und ein paar Wochen später bei den Patienten.
+> Was jemand neu dazulernt, kommt in die nächste Teambesprechung – und ein paar Wochen später bei den Patientinnen und Patienten an.
 >
-> Manuelle Therapie, Lymphdrainage, Bobath, CMD: Jede Zusatzqualifikation im Team macht die Praxis als Ganzes besser. Deshalb beteiligen wir uns an den Kosten.
->
-> Weil Stillstand in diesem Beruf keine Option ist. 💪
+> Manuelle Therapie, Lymphdrainage, Bobath, CMD: Jede Zusatzqualifikation im Team macht die Praxis als Ganzes besser. An den Kosten beteiligen wir uns nach Absprache.
 >
 > #fortbildung #physiotherapie #manuelletherapie #lymphdrainage #bobath #cmd #weiterbildung #arbeitenbeiuns #rottweil #praxisgscheidle
-
-**Warum das zieht:** Das stärkste Signal an Therapeut:innen, die sich
-weiterentwickeln wollen – ohne dass eine Stelle dabeisteht.
 
 ---
 
@@ -87,17 +86,20 @@ Wenn die Stellenanzeigen parallel laufen, ist die Reihenfolge günstig:
 erst ein Markenbeitrag, ein paar Tage später die Anzeige. Wer den Beitrag
 gesehen hat, erkennt die Praxis wieder.
 
+## Emojis
+
+In diesen drei Beiträgen stehen bewusst keine. Die Anzeigentexte in
+[`WERBETEXTE.md`](WERBETEXTE.md) arbeiten damit, weil sie im Feed gegen
+Werbung konkurrieren; die Markenbeiträge sollen ruhig wirken. Wenn sie
+lockerer sein dürfen, lässt sich pro Beitrag einer ergänzen.
+
 ## Nachschub
 
-Weitere Themen, die ohne Stellenausschreibung funktionieren und für die nur
-ein Foto fehlt:
+Weitere Themen in derselben Perspektive, für die jeweils nur ein Foto fehlt:
 
 - **Ein Tag im Behandlungsraum** – was zwischen erstem und letztem Termin passiert
-- **Hausbesuche** – wie die Touren laufen und warum der Dienstwagen dazugehört
+- **Hausbesuche** – wie die Touren laufen und was dafür bereitsteht
 - **Teambesprechung** – wie fachlicher Austausch hier konkret aussieht
-- **Neue Kollegin, erste Woche** – Einarbeitung aus ihrer Sicht erzählt
-
-Alle vier bleiben in der Perspektive „so arbeiten wir" und schreiben keine
-Stelle aus. Für jeden fehlt nur ein Foto.
+- **Die erste Woche** – wie die Einarbeitung bei uns abläuft
 
 Sag Bescheid, dann baue ich die als Motive dazu.

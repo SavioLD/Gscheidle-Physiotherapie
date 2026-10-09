@@ -51,18 +51,18 @@ Dienstwagen, weil er das stärkste Argument der Praxis ist (Vorschlag in
 
 | Beitrag | Überschrift | Fläche |
 |---|---|---|
-| `marke-rezeption` | „Den Papierkram machen zwei Kolleginnen." – Entlastung | **Praxisfoto** |
-| `marke-unabhaengig` | „Keine Kette. Keine Zentrale." – kurze Entscheidungswege | Türkis |
-| `marke-fortbildung` | „Was eine:r lernt, können bald alle." – Weiterentwicklung | helle Fläche |
+| `marke-empfang` | „Am Empfang laufen die Fäden zusammen." – Entlastung | **Praxisfoto** |
+| `marke-praxis` | „Eine Praxis. Kurze Wege." – kleine Praxis, kurze Absprachen | Türkis |
+| `marke-fortbildung` | „Fortbildung bleibt im Team." – Weiterentwicklung | helle Fläche |
 
 Diese drei tragen das Feld `brand:true`. Damit fällt der „Jetzt bewerben"-Knopf
 weg und im Fuß steht nur die Praxis – es sind Beiträge, keine Anzeigen.
 
-Alle drei beantworten dieselbe Frage: **wie ist es, hier zu arbeiten?** Das ist
-der Unterschied zu Praxismarketing – ein Beitrag über gute Befunde oder lange
-Tradition spricht Patienten an, diese sprechen Kolleg:innen an. Deshalb
-durchgängig die Kopfzeile „Arbeiten bei uns". Die Texte stehen in
-[`INSTAGRAM.md`](INSTAGRAM.md).
+Alle drei beantworten dieselbe Frage: **wie ist es, hier zu arbeiten?** Deshalb
+durchgängig die Kopfzeile „Arbeiten bei uns". Sie sind bewusst schlicht und
+allgemein gehalten: keine Rolle wird einem Geschlecht zugeordnet, es gibt keinen
+Vergleich mit anderen Arbeitgebern und keine Superlative. Die Begründung dazu
+und die Texte stehen in [`INSTAGRAM.md`](INSTAGRAM.md).
 
 ## Neu rendern
 
